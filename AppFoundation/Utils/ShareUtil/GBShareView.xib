@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GBShareView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87x-SS-rK0">
+                    <rect key="frame" x="15" y="5" width="345" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" red="0.78816556930000004" green="0.78827989099999995" blue="0.78814047570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSO-1s-WIn">
+                    <rect key="frame" x="23" y="57" width="58" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="QQ好友sns_icon_24"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vza-v3-9yU">
+                    <rect key="frame" x="205" y="57" width="58" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="微信sns_icon_22"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQR-OV-7uy">
+                    <rect key="frame" x="292" y="57" width="58" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="朋友圈sns_icon_23"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZW-Hw-1iw">
+                    <rect key="frame" x="0.0" y="155" width="375" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFl-2k-3VT">
+                    <rect key="frame" x="0.0" y="149" width="375" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="EZx-LA-Z8b"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3U-TI-Pgh">
+                    <rect key="frame" x="113" y="57" width="58" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="QQ空间sns_icon_6"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pZW-Hw-1iw" secondAttribute="bottom" constant="5" id="24Y-Gk-Szc"/>
+                <constraint firstItem="pZW-Hw-1iw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DfT-hy-qbq"/>
+                <constraint firstItem="87x-SS-rK0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Gol-0x-ocu"/>
+                <constraint firstAttribute="trailing" secondItem="87x-SS-rK0" secondAttribute="trailing" constant="15" id="OR1-nS-sRv"/>
+                <constraint firstItem="pZW-Hw-1iw" firstAttribute="top" secondItem="xFl-2k-3VT" secondAttribute="bottom" constant="5" id="aBL-pF-mQh"/>
+                <constraint firstAttribute="trailing" secondItem="pZW-Hw-1iw" secondAttribute="trailing" id="jYG-L6-Qwr"/>
+                <constraint firstItem="87x-SS-rK0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="jzF-Qx-5u7"/>
+                <constraint firstItem="xFl-2k-3VT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kIw-pB-nUL"/>
+                <constraint firstAttribute="trailing" secondItem="xFl-2k-3VT" secondAttribute="trailing" id="rSP-C7-ENm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="78.5" y="-68.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="QQ好友sns_icon_24" width="58" height="58"/>
+        <image name="QQ空间sns_icon_6" width="58" height="58"/>
+        <image name="微信sns_icon_22" width="58" height="58"/>
+        <image name="朋友圈sns_icon_23" width="58" height="58"/>
+    </resources>
+</document>
