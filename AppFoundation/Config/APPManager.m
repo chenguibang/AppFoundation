@@ -10,20 +10,6 @@
 
 
 
-#import <ShareSDK/ShareSDK.h>
-#import <ShareSDKConnector/ShareSDKConnector.h>
-//腾讯开放平台（对应QQ和QQ空间）SDK头文件
-#import <TencentOpenAPI/TencentOAuth.h>
-#import <TencentOpenAPI/QQApiInterface.h>
-//微信SDK头文件
-#import "WXApi.h"
-//新浪微博SDK头文件
-#import "WeiboSDK.h"
-#import "GBSSDKSharePlatform.h"
-
-#import <RongIMKit/RongIMKit.h>
-#import <RongIMLib/RongIMLib.h>
-
 
 //新浪微博SDK需要在项目Build Settings中的Other Linker Flags添加”-ObjC”
 
@@ -57,6 +43,13 @@
 
 
 + (void)setupRCIM{
+    
+    
+    /**
+    
+    
+    
+    
     [[RCIM sharedRCIM] initWithAppKey:@"kj7swf8okhqd2"];
     
     [[RCIM sharedRCIM] connectWithToken:@"iAoMk9BPhj6Qq+JiG5aYZ9gTW3GNsXsX94DeGjEswCnOSbn5Are/jb8E2cb3X3n4kU5SQgla0tBl2+PIFDRnyQ==" success:^(NSString *userId) {
@@ -69,6 +62,9 @@
         //如果没有设置token有效期却提示token错误，请检查您客户端和服务器的appkey是否匹配，还有检查您获取token的流程。
         NSLog(@"token错误");
     }];
+     
+     
+     */
 }
 
 + (void)setupShareWith:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
@@ -80,6 +76,9 @@
      @param configurationHandler (onConfiguration)
      配置回调处理，在此方法中根据设置的platformType来填充应用配置信息
      */
+    
+    /*
+    
     [ShareSDK registerActivePlatforms:@[
                                         
                                         @(SSDKPlatformTypeWechat),
@@ -141,6 +140,8 @@
                  break;
          }
      }];
+     
+     */
 }
 
 

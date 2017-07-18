@@ -4,7 +4,7 @@ source 'https://gitclub.cn/CocoaPods/Specs.git'
 platform :ios, ‘8.0’
 
 target 'AppFoundation' do
-    
+#    use_frameworks!
     pod 'FMDB', '~> 2.6.2'                      #sqlite
     pod 'SVProgressHUD', '~> 2.1.2'             #菊花
     pod 'YBPopupMenu', '~> 0.1.2'               #弹出菜单
@@ -40,7 +40,7 @@ target 'AppFoundation' do
 end
 
 target 'AppFoundationDemo' do
-    
+#    use_frameworks!
     pod 'FMDB', '~> 2.6.2'                      #sqlite
     pod 'SVProgressHUD', '~> 2.1.2'             #菊花
     pod 'YBPopupMenu', '~> 0.1.2'               #弹出菜单
