@@ -43,6 +43,7 @@ AppFoundation. for quik development AppFoundation. for quik development
    s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
+
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the authors of the library, with email addresses. Email addresses
