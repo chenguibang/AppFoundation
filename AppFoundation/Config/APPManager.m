@@ -45,9 +45,7 @@
 + (void)setupRCIM{
     
     
-    /**
-    
-    
+
     
     
     [[RCIM sharedRCIM] initWithAppKey:@"kj7swf8okhqd2"];
@@ -64,7 +62,7 @@
     }];
      
      
-     */
+
 }
 
 + (void)setupShareWith:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
@@ -77,7 +75,7 @@
      配置回调处理，在此方法中根据设置的platformType来填充应用配置信息
      */
     
-    /*
+
     
     [ShareSDK registerActivePlatforms:@[
                                         
@@ -141,7 +139,7 @@
          }
      }];
      
-     */
+
 }
 
 
