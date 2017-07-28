@@ -49,6 +49,11 @@
    
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return [APPManager shared].theme.preferredStatusBarStyle;
+}
+
+
 //-(void)setTitle:(NSString *)title{
 //    self.navigationItem.title = title;
 //   

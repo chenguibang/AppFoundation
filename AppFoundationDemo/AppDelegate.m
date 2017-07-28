@@ -2,12 +2,12 @@
 //  AppDelegate.m
 //  AppFoundationDemo
 //
-//  Created by ceo on 2017/7/17.
+//  Created by chenguibang on 2017/7/19.
 //  Copyright © 2017年 chengb. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import <AppFoundation/APPManager.h>
+#import <AppFoundation.h>
 @interface AppDelegate ()
 
 @end
@@ -17,7 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [APPManager shared].theme.navigationBarBackgorundColor = [UIColor redColor];
+    [APPManager shared].theme.navigationBarBackgorundColor = UIColorWithRGB(0, 179, 252);
+    [APPManager shared].theme.viewControllerBackgroundColor = [UIColor whiteColor];
+    [APPManager shared].theme.preferredStatusBarStyle = UIStatusBarStyleLightContent;
+    
+    [APPManager shared].theme.colorOfTitleNormal = [UIColor grayColor];
+    [APPManager shared].theme.colorOfTitleSeparate = UIColorWithString(0xf4f4f4);
+    [APPManager setupShareWith:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 

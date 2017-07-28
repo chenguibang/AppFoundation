@@ -19,7 +19,10 @@ FOUNDATION_EXPORT const unsigned char AppFoundationVersionString[];
 #import <AppFoundation/GBSlipPageController.h>
 #import <AppFoundation/BaseController.h>
 #import <AppFoundation/UIViewController+BackButtonHandler.h>
-
 #import <AppFoundation/PortraitPicker.h>
 #import <TZImagePickerController/TZImagePickerController.h>
 #import <AppFoundation/APPManager.h>
+
+#import <AppFoundation/AppDefine.h>
+#import <AppFoundation/Header.h>
+

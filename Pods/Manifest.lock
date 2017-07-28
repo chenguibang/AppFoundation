@@ -1,9 +1,40 @@
 PODS:
+  - AppFoundation (0.0.2):
+    - Bugly
+    - CYLTableViewPlaceHolder (~> 1.0.8)
+    - FMDB (~> 2.6.2)
+    - IQKeyboardManager (~> 4.0.9)
+    - JKCategories (~> 1.5)
+    - JSONKit (~> 1.5pre)
+    - KVOController
+    - LBXScan (~> 2.2)
+    - Masonry (~> 1.0.2)
+    - MBProgressHUD (~> 1.0.0)
+    - MJExtension (~> 3.0.13)
+    - MJRefresh (~> 3.1.12)
+    - NSDate-Escort (~> 1.8.2)
+    - pop
+    - RefreshControl (~> 2.0.5)
+    - RKNotificationHub
+    - RongCloudIM/IMKit (~> 2.8.3)
+    - RongCloudIM/IMLib (~> 2.8.3)
+    - ScottAlertController (~> 0.1.0)
+    - SDCycleScrollView
+    - SVProgressHUD (~> 2.1.2)
+    - TZImagePickerController (~> 1.8.1)
+    - UIButton+HHAddLayout (~> 0.0.1)
+    - UIButton-SSEdgeInsets (~> 0.1.7)
+    - VIPhotoView
+    - WebViewJavascriptBridge (~> 6.0.2)
+    - YBPopupMenu (~> 0.1.2)
+  - Bugly (2.4.8)
   - CYLTableViewPlaceHolder (1.0.8)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - IQKeyboardManager (4.0.10)
+  - JKCategories (1.5)
+  - JSONKit (1.5pre)
   - KVOController (1.2.0)
   - LBXScan (2.2):
     - LBXScan/All (= 2.2)
@@ -12,6 +43,7 @@ PODS:
     - ZBarSDK (~> 1.3.1)
   - LBXScan/Types (2.2)
   - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
   - NSDate-Escort (1.8.2)
@@ -37,12 +69,17 @@ PODS:
   - ZBarSDK (1.3.1)
 
 DEPENDENCIES:
+  - AppFoundation (from `/Users/chenguibang/Desktop/BGGPlace/AppFoundation`)
+  - Bugly
   - CYLTableViewPlaceHolder (~> 1.0.8)
   - FMDB (~> 2.6.2)
   - IQKeyboardManager (~> 4.0.9)
+  - JKCategories (~> 1.5)
+  - JSONKit (~> 1.5pre)
   - KVOController
   - LBXScan (~> 2.2)
   - Masonry (~> 1.0.2)
+  - MBProgressHUD (~> 1.0.0)
   - MJExtension (~> 3.0.13)
   - MJRefresh (~> 3.1.12)
   - NSDate-Escort (~> 1.8.2)
@@ -61,13 +98,22 @@ DEPENDENCIES:
   - WebViewJavascriptBridge (~> 6.0.2)
   - YBPopupMenu (~> 0.1.2)
 
+EXTERNAL SOURCES:
+  AppFoundation:
+    :path: /Users/chenguibang/Desktop/BGGPlace/AppFoundation
+
 SPEC CHECKSUMS:
+  AppFoundation: d6f631c2df93d8f39726e47dc5a86a037d4cd680
+  Bugly: da3c02408c14838d498429320545a8e439392978
   CYLTableViewPlaceHolder: 44075c119aab78bbc514c75d771d6565e19938e8
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   IQKeyboardManager: 593ee99b88381f4b9ccb22bd680f22606351bd41
+  JKCategories: 863f4c7ed2d521ee6bf72ceea97948da23bb5af4
+  JSONKit: bae313ce6a6c444f40489a6c0b023f399888871f
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   LBXScan: 31b69c9657404133324e6b68ef814802ef9cacc0
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   NSDate-Escort: c79db277a401c0ad219acd295ec17c7b4f61266f
@@ -87,6 +133,6 @@ SPEC CHECKSUMS:
   YBPopupMenu: f081ab289c4c72483b940594e4976314157fc727
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: 575b22056b49eaf3e114ea7cee19281719d4d537
+PODFILE CHECKSUM: 32c236b546aec4a50cdce0f0cf626f140854233b
 
 COCOAPODS: 1.3.0.beta.2

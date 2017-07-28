@@ -11,6 +11,7 @@
 @implementation AppClient
 
 + (instancetype)shared{
+    
     return nil;
 }
 

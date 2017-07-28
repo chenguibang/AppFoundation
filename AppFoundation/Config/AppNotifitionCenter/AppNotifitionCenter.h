@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark - 通知
+#define NOTI_HOMEVCSHOW @"NOTI_HOMEVCSHOW"
 #define NOTI_SHOWLOGIN @"NOTI_SHOWLOGIN"; //!< 跳转到登录页面
 #define NOTI_LOGINSCCESS @"NOTI_LOGINSCCESS"; //!< 登录成功
 #define NOTI_LOGINSCCESS @"NOTI_LOGINSCCESS"; //!< 登录失败

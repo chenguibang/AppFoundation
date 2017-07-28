@@ -32,4 +32,6 @@
 
 + (void)setupShareWith:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
++ (void)setupBugly;
+
 @end

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2E246DB613B1F2BA5A31B3C9005674F9'
+               BlueprintIdentifier = '3A63B0160D89940945E479A7F4B83866'
                BlueprintName = 'UIButton-SSEdgeInsets'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libUIButton-SSEdgeInsets.a'>

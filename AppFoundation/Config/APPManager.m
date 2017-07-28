@@ -7,7 +7,7 @@
 //
 
 #import "APPManager.h"
-
+#import <Bugly/Bugly.h>
 
 
 
@@ -74,9 +74,6 @@
      @param configurationHandler (onConfiguration)
      配置回调处理，在此方法中根据设置的platformType来填充应用配置信息
      */
-    
-
-    
     [ShareSDK registerActivePlatforms:@[
                                         
                                         @(SSDKPlatformTypeWechat),
@@ -140,6 +137,11 @@
      }];
      
 
+}
+
+
++ (void)setupBugly{
+    [Bugly startWithAppId:@"i1400036145"];
 }
 
 

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GBSSDKSharePlatform.h"
+
 @interface GBShareView : UIView<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>{
     UIImageView *rightTip;
 }

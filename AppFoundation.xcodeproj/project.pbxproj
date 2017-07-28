@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		32CEF32CA720A17FF05DE65A /* libPods-AppFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D86115B0CAF35D7185340269 /* libPods-AppFoundation.a */; };
-		67118423C7946FFAF713B0D2 /* libPods-AppFoundationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C033B0F1E4E8E76119DA90AC /* libPods-AppFoundationDemo.a */; };
+		76BBF65A7CE81B667F7ADD22 /* libPods-AppFoundationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C033B0F1E4E8E76119DA90AC /* libPods-AppFoundationDemo.a */; };
+		8F447C3A1F25880D00854531 /* NSString+GBSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F447C381F25880D00854531 /* NSString+GBSize.h */; };
+		8F447C3B1F25880D00854531 /* NSString+GBSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F447C391F25880D00854531 /* NSString+GBSize.m */; };
 		8F5A246E1F1E175F00003429 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A246D1F1E175F00003429 /* UIKit.framework */; };
-		8F5A24B71F1E3A0500003429 /* GBDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24B41F1E3A0500003429 /* GBDatePickerView.h */; };
+		8F5A24B71F1E3A0500003429 /* GBDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24B41F1E3A0500003429 /* GBDatePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F5A24B81F1E3A0500003429 /* GBDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A24B51F1E3A0500003429 /* GBDatePickerView.m */; };
 		8F5A24B91F1E3A0500003429 /* GBDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A24B61F1E3A0500003429 /* GBDatePickerView.xib */; };
 		8F5A24E11F1E508900003429 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A24BC1F1E508900003429 /* MOBFoundation.framework */; };
@@ -29,26 +31,36 @@
 		8F5A24EE1F1E508900003429 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A24CF1F1E508900003429 /* TencentOpenAPI.framework */; };
 		8F5A24EF1F1E508900003429 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A24D01F1E508900003429 /* TencentOpenApi_IOS_Bundle.bundle */; };
 		8F5A24F01F1E508900003429 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A24D21F1E508900003429 /* libWeiboSDK.a */; };
-		8F5A24F11F1E508900003429 /* WBHttpRequest+WeiboToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24D31F1E508900003429 /* WBHttpRequest+WeiboToken.h */; };
-		8F5A24F21F1E508900003429 /* WBHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24D41F1E508900003429 /* WBHttpRequest.h */; };
-		8F5A24F31F1E508900003429 /* WeiboSDK+Statistics.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24D51F1E508900003429 /* WeiboSDK+Statistics.h */; };
+		8F5A24F11F1E508900003429 /* WBHttpRequest+WeiboToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24D31F1E508900003429 /* WBHttpRequest+WeiboToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F5A24F21F1E508900003429 /* WBHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24D41F1E508900003429 /* WBHttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F5A24F31F1E508900003429 /* WeiboSDK+Statistics.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24D51F1E508900003429 /* WeiboSDK+Statistics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F5A24F41F1E508900003429 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A24D61F1E508900003429 /* WeiboSDK.bundle */; };
-		8F5A24F51F1E508900003429 /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24D71F1E508900003429 /* WeiboSDK.h */; };
+		8F5A24F51F1E508900003429 /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24D71F1E508900003429 /* WeiboSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F5A24F61F1E508900003429 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A24D91F1E508900003429 /* libWeChatSDK.a */; };
 		8F5A24F71F1E508900003429 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A24DA1F1E508900003429 /* README.txt */; };
-		8F5A24F81F1E508900003429 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24DB1F1E508900003429 /* WechatAuthSDK.h */; };
-		8F5A24F91F1E508900003429 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24DC1F1E508900003429 /* WXApi.h */; };
-		8F5A24FA1F1E508900003429 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24DD1F1E508900003429 /* WXApiObject.h */; };
+		8F5A24F81F1E508900003429 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24DB1F1E508900003429 /* WechatAuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F5A24F91F1E508900003429 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24DC1F1E508900003429 /* WXApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F5A24FA1F1E508900003429 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24DD1F1E508900003429 /* WXApiObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F5A24FB1F1E508900003429 /* ShareSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A24DF1F1E508900003429 /* ShareSDK.bundle */; };
 		8F5A24FC1F1E508900003429 /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A24E01F1E508900003429 /* ShareSDKConnector.framework */; };
-		8F5A25061F1E509100003429 /* GBShareCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24FE1F1E509100003429 /* GBShareCell.h */; };
+		8F5A25061F1E509100003429 /* GBShareCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A24FE1F1E509100003429 /* GBShareCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F5A25071F1E509100003429 /* GBShareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A24FF1F1E509100003429 /* GBShareCell.m */; };
 		8F5A25081F1E509100003429 /* GBShareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A25001F1E509100003429 /* GBShareCell.xib */; };
-		8F5A25091F1E509100003429 /* GBShareView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A25011F1E509100003429 /* GBShareView.h */; };
+		8F5A25091F1E509100003429 /* GBShareView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A25011F1E509100003429 /* GBShareView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F5A250A1F1E509100003429 /* GBShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A25021F1E509100003429 /* GBShareView.m */; };
 		8F5A250B1F1E509100003429 /* GBShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A25031F1E509100003429 /* GBShareView.xib */; };
-		8F5A250C1F1E509100003429 /* GBSSDKSharePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A25041F1E509100003429 /* GBSSDKSharePlatform.h */; };
+		8F5A250C1F1E509100003429 /* GBSSDKSharePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A25041F1E509100003429 /* GBSSDKSharePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F5A250D1F1E509100003429 /* GBSSDKSharePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A25051F1E509100003429 /* GBSSDKSharePlatform.m */; };
+		8F5A254E1F1ED5F300003429 /* AppDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5A254D1F1ED5F300003429 /* AppDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F5A25511F1EE02900003429 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A25501F1EE02900003429 /* Media.xcassets */; };
+		8F5A257E1F1EF1D200003429 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A257D1F1EF1D200003429 /* main.m */; };
+		8F5A25811F1EF1D200003429 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A25801F1EF1D200003429 /* AppDelegate.m */; };
+		8F5A25841F1EF1D200003429 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A25831F1EF1D200003429 /* ViewController.m */; };
+		8F5A25871F1EF1D200003429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A25851F1EF1D200003429 /* Main.storyboard */; };
+		8F5A25891F1EF1D200003429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A25881F1EF1D200003429 /* Assets.xcassets */; };
+		8F5A258C1F1EF1D200003429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A258A1F1EF1D200003429 /* LaunchScreen.storyboard */; };
+		8F5A25921F1EF93F00003429 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A25911F1EF93F00003429 /* Media.xcassets */; };
+		8F5A25941F1EFA9100003429 /* AppFoundation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8F5A25931F1EFA9100003429 /* AppFoundation.bundle */; };
 		BA25B3371F1C5FD800F8844B /* AppFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25B3351F1C5FD800F8844B /* AppFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA25B3F51F1C608300F8844B /* UIImage+GBExpand.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25B34B1F1C608300F8844B /* UIImage+GBExpand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA25B3F61F1C608300F8844B /* UIImage+GBExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B34C1F1C608300F8844B /* UIImage+GBExpand.m */; };
@@ -142,17 +154,12 @@
 		BA25B46F1F1C608300F8844B /* PortraPickerMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA25B3EB1F1C608300F8844B /* PortraPickerMenu.xib */; };
 		BA25B47B1F1C615000F8844B /* GBSlipPageController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25B4791F1C615000F8844B /* GBSlipPageController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA25B47C1F1C615000F8844B /* GBSlipPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B47A1F1C615000F8844B /* GBSlipPageController.m */; };
-		BA25B5001F1C84C400F8844B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B4FF1F1C84C400F8844B /* main.m */; };
-		BA25B5031F1C84C400F8844B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B5021F1C84C400F8844B /* AppDelegate.m */; };
-		BA25B5061F1C84C400F8844B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B5051F1C84C400F8844B /* ViewController.m */; };
-		BA25B5091F1C84C400F8844B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA25B5071F1C84C400F8844B /* Main.storyboard */; };
-		BA25B50B1F1C84C400F8844B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA25B50A1F1C84C400F8844B /* Assets.xcassets */; };
-		BA25B50E1F1C84C400F8844B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA25B50C1F1C84C400F8844B /* LaunchScreen.storyboard */; };
-		BA25B5131F1C850B00F8844B /* AppFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA25B3321F1C5FD800F8844B /* AppFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F8559B9320C152C9BC98C0D /* Pods-AppFoundationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFoundationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppFoundationDemo/Pods-AppFoundationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8F447C381F25880D00854531 /* NSString+GBSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GBSize.h"; sourceTree = "<group>"; };
+		8F447C391F25880D00854531 /* NSString+GBSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GBSize.m"; sourceTree = "<group>"; };
 		8F5A246D1F1E175F00003429 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8F5A24B41F1E3A0500003429 /* GBDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBDatePickerView.h; sourceTree = "<group>"; };
 		8F5A24B51F1E3A0500003429 /* GBDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBDatePickerView.m; sourceTree = "<group>"; };
@@ -193,6 +200,20 @@
 		8F5A25031F1E509100003429 /* GBShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBShareView.xib; sourceTree = "<group>"; };
 		8F5A25041F1E509100003429 /* GBSSDKSharePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBSSDKSharePlatform.h; sourceTree = "<group>"; };
 		8F5A25051F1E509100003429 /* GBSSDKSharePlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBSSDKSharePlatform.m; sourceTree = "<group>"; };
+		8F5A254D1F1ED5F300003429 /* AppDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDefine.h; sourceTree = "<group>"; };
+		8F5A25501F1EE02900003429 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		8F5A257A1F1EF1D200003429 /* AppFoundationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppFoundationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F5A257D1F1EF1D200003429 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F5A257F1F1EF1D200003429 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F5A25801F1EF1D200003429 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F5A25821F1EF1D200003429 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8F5A25831F1EF1D200003429 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8F5A25861F1EF1D200003429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F5A25881F1EF1D200003429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F5A258B1F1EF1D200003429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F5A258D1F1EF1D200003429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F5A25911F1EF93F00003429 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		8F5A25931F1EFA9100003429 /* AppFoundation.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppFoundation.bundle; sourceTree = "<group>"; };
 		BA25B3321F1C5FD800F8844B /* AppFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA25B3351F1C5FD800F8844B /* AppFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppFoundation.h; sourceTree = "<group>"; };
 		BA25B3361F1C5FD800F8844B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -288,16 +309,6 @@
 		BA25B3EB1F1C608300F8844B /* PortraPickerMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortraPickerMenu.xib; sourceTree = "<group>"; };
 		BA25B4791F1C615000F8844B /* GBSlipPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBSlipPageController.h; sourceTree = "<group>"; };
 		BA25B47A1F1C615000F8844B /* GBSlipPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBSlipPageController.m; sourceTree = "<group>"; };
-		BA25B4FC1F1C84C400F8844B /* AppFoundationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppFoundationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA25B4FF1F1C84C400F8844B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BA25B5011F1C84C400F8844B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BA25B5021F1C84C400F8844B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BA25B5041F1C84C400F8844B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BA25B5051F1C84C400F8844B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BA25B5081F1C84C400F8844B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BA25B50A1F1C84C400F8844B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BA25B50D1F1C84C400F8844B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BA25B50F1F1C84C400F8844B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C033B0F1E4E8E76119DA90AC /* libPods-AppFoundationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppFoundationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D010536B4B9EF2830B5AC975 /* Pods-AppFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppFoundation.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppFoundation/Pods-AppFoundation.release.xcconfig"; sourceTree = "<group>"; };
 		D86115B0CAF35D7185340269 /* libPods-AppFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppFoundation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,6 +317,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8F5A25771F1EF1D200003429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BBF65A7CE81B667F7ADD22 /* libPods-AppFoundationDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA25B32E1F1C5FD800F8844B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,15 +349,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA25B4F91F1C84C400F8844B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA25B5131F1C850B00F8844B /* AppFoundation.framework in Frameworks */,
-				67118423C7946FFAF713B0D2 /* libPods-AppFoundationDemo.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -351,6 +361,15 @@
 				ED6881D056535FED4204E746 /* Pods-AppFoundationDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F447C371F2587F100854531 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				8F447C381F25880D00854531 /* NSString+GBSize.h */,
+				8F447C391F25880D00854531 /* NSString+GBSize.m */,
+			);
+			path = NSString;
 			sourceTree = "<group>";
 		};
 		8F5A24B21F1E3A0500003429 /* GBDate */ = {
@@ -501,11 +520,52 @@
 			path = ShareUtil;
 			sourceTree = "<group>";
 		};
+		8F5A254F1F1EE02900003429 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8F5A25501F1EE02900003429 /* Media.xcassets */,
+				8F5A25931F1EFA9100003429 /* AppFoundation.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8F5A257B1F1EF1D200003429 /* AppFoundationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8F5A25911F1EF93F00003429 /* Media.xcassets */,
+				8F5A257F1F1EF1D200003429 /* AppDelegate.h */,
+				8F5A25801F1EF1D200003429 /* AppDelegate.m */,
+				8F5A25821F1EF1D200003429 /* ViewController.h */,
+				8F5A25831F1EF1D200003429 /* ViewController.m */,
+				8F5A25851F1EF1D200003429 /* Main.storyboard */,
+				8F5A25881F1EF1D200003429 /* Assets.xcassets */,
+				8F5A258A1F1EF1D200003429 /* LaunchScreen.storyboard */,
+				8F5A258D1F1EF1D200003429 /* Info.plist */,
+				8F5A257C1F1EF1D200003429 /* Supporting Files */,
+			);
+			path = AppFoundationDemo;
+			sourceTree = "<group>";
+		};
+		8F5A257C1F1EF1D200003429 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F5A257D1F1EF1D200003429 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FF58B741F206D8500F8A925 /* GBIMKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GBIMKit;
+			sourceTree = "<group>";
+		};
 		BA25B3281F1C5FD800F8844B = {
 			isa = PBXGroup;
 			children = (
-				BA25B4FD1F1C84C400F8844B /* AppFoundationDemo */,
 				BA25B3341F1C5FD800F8844B /* AppFoundation */,
+				8F5A257B1F1EF1D200003429 /* AppFoundationDemo */,
 				BA25B3331F1C5FD800F8844B /* Products */,
 				70D0A9942CF70EF64361109A /* Pods */,
 				D9BD86A44CF4EA8F7F1D80DD /* Frameworks */,
@@ -516,7 +576,7 @@
 			isa = PBXGroup;
 			children = (
 				BA25B3321F1C5FD800F8844B /* AppFoundation.framework */,
-				BA25B4FC1F1C84C400F8844B /* AppFoundationDemo.app */,
+				8F5A257A1F1EF1D200003429 /* AppFoundationDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -524,6 +584,7 @@
 		BA25B3341F1C5FD800F8844B /* AppFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				8F5A254F1F1EE02900003429 /* Resource */,
 				BA25B33D1F1C608300F8844B /* Category */,
 				BA25B3541F1C608300F8844B /* Config */,
 				BA25B3631F1C608300F8844B /* GBFoundation */,
@@ -538,6 +599,7 @@
 		BA25B33D1F1C608300F8844B /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8F447C371F2587F100854531 /* NSString */,
 				BA25B33E1F1C608300F8844B /* APPDelegate */,
 				BA25B33F1F1C608300F8844B /* ShareSDK */,
 				BA25B34A1F1C608300F8844B /* UIImage */,
@@ -673,6 +735,7 @@
 				BA25B3601F1C608300F8844B /* APPTheme.m */,
 				BA25B3611F1C608300F8844B /* Header.h */,
 				BA25B3621F1C608300F8844B /* PrefixHeader.pch */,
+				8F5A254D1F1ED5F300003429 /* AppDefine.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -700,6 +763,7 @@
 		BA25B3631F1C608300F8844B /* GBFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				8FF58B741F206D8500F8A925 /* GBIMKit */,
 				8F5A24B21F1E3A0500003429 /* GBDate */,
 				BA25B4781F1C615000F8844B /* GBSlipPageController */,
 				BA25B3641F1C608300F8844B /* BaseController */,
@@ -937,30 +1001,6 @@
 			path = GBSlipPageController;
 			sourceTree = "<group>";
 		};
-		BA25B4FD1F1C84C400F8844B /* AppFoundationDemo */ = {
-			isa = PBXGroup;
-			children = (
-				BA25B5011F1C84C400F8844B /* AppDelegate.h */,
-				BA25B5021F1C84C400F8844B /* AppDelegate.m */,
-				BA25B5041F1C84C400F8844B /* ViewController.h */,
-				BA25B5051F1C84C400F8844B /* ViewController.m */,
-				BA25B5071F1C84C400F8844B /* Main.storyboard */,
-				BA25B50A1F1C84C400F8844B /* Assets.xcassets */,
-				BA25B50C1F1C84C400F8844B /* LaunchScreen.storyboard */,
-				BA25B50F1F1C84C400F8844B /* Info.plist */,
-				BA25B4FE1F1C84C400F8844B /* Supporting Files */,
-			);
-			path = AppFoundationDemo;
-			sourceTree = "<group>";
-		};
-		BA25B4FE1F1C84C400F8844B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BA25B4FF1F1C84C400F8844B /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		D9BD86A44CF4EA8F7F1D80DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -982,23 +1022,20 @@
 				BA25B4261F1C608300F8844B /* UIWindow+LBXHierarchy.h in Headers */,
 				BA25B3FB1F1C608300F8844B /* UIViewController+BackButtonHandler.h in Headers */,
 				BA25B46D1F1C608300F8844B /* PortraPickerMenu.h in Headers */,
-				8F5A24F11F1E508900003429 /* WBHttpRequest+WeiboToken.h in Headers */,
 				BA25B47B1F1C615000F8844B /* GBSlipPageController.h in Headers */,
 				BA25B4491F1C608300F8844B /* ZJBLTimerButton.h in Headers */,
 				BA25B4331F1C608300F8844B /* GBRegular.h in Headers */,
 				BA25B40B1F1C608300F8844B /* GBAdvPageView.h in Headers */,
 				BA25B40D1F1C608300F8844B /* GBBaseViewController.h in Headers */,
-				8F5A24F91F1E508900003429 /* WXApi.h in Headers */,
 				BA25B42C1F1C608300F8844B /* QQLBXScanViewController.h in Headers */,
 				BA25B3F91F1C608300F8844B /* UIViewController+BackButtonApeance.h in Headers */,
 				BA25B46B1F1C608300F8844B /* PortraitPicker.h in Headers */,
-				8F5A24B71F1E3A0500003429 /* GBDatePickerView.h in Headers */,
-				8F5A250C1F1E509100003429 /* GBSSDKSharePlatform.h in Headers */,
 				BA25B4221F1C608300F8844B /* UIAlertController+supportedInterfaceOrientations.h in Headers */,
 				BA25B3F71F1C608300F8844B /* UINavigationController+StatusBarStyle.h in Headers */,
 				BA25B4141F1C608300F8844B /* GBTableViewControllerTest.h in Headers */,
 				BA25B41E1F1C608300F8844B /* Global.h in Headers */,
 				BA25B4201F1C608300F8844B /* UIActionSheet+LBXAlertAction.h in Headers */,
+				8F447C3A1F25880D00854531 /* NSString+GBSize.h in Headers */,
 				BA25B44B1F1C608300F8844B /* GBWebViewContoller.h in Headers */,
 				BA25B4121F1C608300F8844B /* GBFoundationTestRoot.h in Headers */,
 				BA25B4091F1C608300F8844B /* BaseController.h in Headers */,
@@ -1013,22 +1050,27 @@
 				BA25B4371F1C608300F8844B /* GBSearchHistoryController.h in Headers */,
 				BA25B3FF1F1C608300F8844B /* UserInfo.h in Headers */,
 				BA25B4391F1C608300F8844B /* GBSearchKeyWordController.h in Headers */,
-				8F5A25091F1E509100003429 /* GBShareView.h in Headers */,
 				BA25B43D1F1C608300F8844B /* GBSearchView.h in Headers */,
 				BA25B4311F1C608300F8844B /* StyleDIY.h in Headers */,
 				BA25B42A1F1C608300F8844B /* LBXScanPermissions.h in Headers */,
 				BA25B4421F1C608300F8844B /* GBTableViewPlaceHolder.h in Headers */,
 				BA25B4471F1C608300F8844B /* GBTextFiled.h in Headers */,
-				8F5A24F21F1E508900003429 /* WBHttpRequest.h in Headers */,
-				8F5A24F31F1E508900003429 /* WeiboSDK+Statistics.h in Headers */,
 				BA25B4011F1C608300F8844B /* APPManager.h in Headers */,
 				BA25B4081F1C608300F8844B /* PrefixHeader.pch in Headers */,
+				8F5A24F11F1E508900003429 /* WBHttpRequest+WeiboToken.h in Headers */,
+				8F5A24F91F1E508900003429 /* WXApi.h in Headers */,
+				8F5A24B71F1E3A0500003429 /* GBDatePickerView.h in Headers */,
+				8F5A250C1F1E509100003429 /* GBSSDKSharePlatform.h in Headers */,
+				8F5A254E1F1ED5F300003429 /* AppDefine.h in Headers */,
+				8F5A25091F1E509100003429 /* GBShareView.h in Headers */,
+				8F5A24F21F1E508900003429 /* WBHttpRequest.h in Headers */,
+				8F5A24F31F1E508900003429 /* WeiboSDK+Statistics.h in Headers */,
 				8F5A24FA1F1E508900003429 /* WXApiObject.h in Headers */,
-				BA25B41A1F1C608300F8844B /* UIImageView+CornerRadius.h in Headers */,
 				8F5A24F51F1E508900003429 /* WeiboSDK.h in Headers */,
-				BA25B3FD1F1C608300F8844B /* AppClient.h in Headers */,
 				8F5A24F81F1E508900003429 /* WechatAuthSDK.h in Headers */,
 				8F5A25061F1E509100003429 /* GBShareCell.h in Headers */,
+				BA25B41A1F1C608300F8844B /* UIImageView+CornerRadius.h in Headers */,
+				BA25B3FD1F1C608300F8844B /* AppClient.h in Headers */,
 				BA25B4051F1C608300F8844B /* APPTheme.h in Headers */,
 				BA25B4031F1C608300F8844B /* AppNotifitionCenter.h in Headers */,
 				BA25B4351F1C608300F8844B /* NSString+GBRegular.h in Headers */,
@@ -1041,6 +1083,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8F5A25791F1EF1D200003429 /* AppFoundationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F5A258E1F1EF1D200003429 /* Build configuration list for PBXNativeTarget "AppFoundationDemo" */;
+			buildPhases = (
+				48F83896C24AAF2F691658C1 /* [CP] Check Pods Manifest.lock */,
+				8F5A25761F1EF1D200003429 /* Sources */,
+				8F5A25771F1EF1D200003429 /* Frameworks */,
+				8F5A25781F1EF1D200003429 /* Resources */,
+				F71377A9E351DE9CC71E5777 /* [CP] Embed Pods Frameworks */,
+				4DEC7F5C29C50277EBF32A28 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppFoundationDemo;
+			productName = AppFoundationDemo;
+			productReference = 8F5A257A1F1EF1D200003429 /* AppFoundationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		BA25B3311F1C5FD800F8844B /* AppFoundation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA25B33A1F1C5FD800F8844B /* Build configuration list for PBXNativeTarget "AppFoundation" */;
@@ -1061,26 +1123,6 @@
 			productReference = BA25B3321F1C5FD800F8844B /* AppFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BA25B4FB1F1C84C400F8844B /* AppFoundationDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA25B5101F1C84C400F8844B /* Build configuration list for PBXNativeTarget "AppFoundationDemo" */;
-			buildPhases = (
-				21529C09C2F3AD6AF7517ABF /* [CP] Check Pods Manifest.lock */,
-				BA25B4F81F1C84C400F8844B /* Sources */,
-				BA25B4F91F1C84C400F8844B /* Frameworks */,
-				BA25B4FA1F1C84C400F8844B /* Resources */,
-				FA8237E833CAFEFDA4D7E4E6 /* [CP] Embed Pods Frameworks */,
-				0A193A51B0D3B265D3B3F103 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AppFoundationDemo;
-			productName = AppFoundationDemo;
-			productReference = BA25B4FC1F1C84C400F8844B /* AppFoundationDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1090,11 +1132,12 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = chengb;
 				TargetAttributes = {
-					BA25B3311F1C5FD800F8844B = {
-						CreatedOnToolsVersion = 8.3.2;
+					8F5A25791F1EF1D200003429 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = DS9W6935FH;
 						ProvisioningStyle = Automatic;
 					};
-					BA25B4FB1F1C84C400F8844B = {
+					BA25B3311F1C5FD800F8844B = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -1114,23 +1157,36 @@
 			projectRoot = "";
 			targets = (
 				BA25B3311F1C5FD800F8844B /* AppFoundation */,
-				BA25B4FB1F1C84C400F8844B /* AppFoundationDemo */,
+				8F5A25791F1EF1D200003429 /* AppFoundationDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8F5A25781F1EF1D200003429 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F5A258C1F1EF1D200003429 /* LaunchScreen.storyboard in Resources */,
+				8F5A25891F1EF1D200003429 /* Assets.xcassets in Resources */,
+				8F5A25921F1EF93F00003429 /* Media.xcassets in Resources */,
+				8F5A25871F1EF1D200003429 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA25B3301F1C5FD800F8844B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8F5A24EF1F1E508900003429 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				BA25B43F1F1C608300F8844B /* GBSearchView.xib in Resources */,
+				8F5A25511F1EE02900003429 /* Media.xcassets in Resources */,
 				BA25B4301F1C608300F8844B /* ScanResultViewController.xib in Resources */,
 				8F5A24E61F1E508900003429 /* ShareSDKUI.bundle in Resources */,
 				8F5A24FB1F1E508900003429 /* ShareSDK.bundle in Resources */,
 				8F5A24F71F1E508900003429 /* README.txt in Resources */,
 				8F5A24E31F1E508900003429 /* ShareSDKConfigFile.bundle in Resources */,
+				8F5A25941F1EFA9100003429 /* AppFoundation.bundle in Resources */,
 				8F5A24F41F1E508900003429 /* WeiboSDK.bundle in Resources */,
 				8F5A25081F1E509100003429 /* GBShareCell.xib in Resources */,
 				BA25B4441F1C608300F8844B /* GBTableViewPlaceHolder.xib in Resources */,
@@ -1140,20 +1196,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA25B4FA1F1C84C400F8844B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA25B50E1F1C84C400F8844B /* LaunchScreen.storyboard in Resources */,
-				BA25B50B1F1C84C400F8844B /* Assets.xcassets in Resources */,
-				BA25B5091F1C84C400F8844B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A193A51B0D3B265D3B3F103 /* [CP] Copy Pods Resources */ = {
+		42B6DFFF83D630B4AE96C600 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppFoundation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48F83896C24AAF2F691658C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppFoundationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DEC7F5C29C50277EBF32A28 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1174,6 +1256,19 @@
 				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
 				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
 				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
+				"${PODS_ROOT}/../AppFoundation/GBFoundation/GBDate/GBDatePicker/GBDatePickerView.xib",
+				"${PODS_ROOT}/../AppFoundation/GBFoundation/GBQRScan/ScanResultViewController.xib",
+				"${PODS_ROOT}/../AppFoundation/GBFoundation/GBSearchView/GBSearchView.xib",
+				"${PODS_ROOT}/../AppFoundation/GBFoundation/GBTableController/GBTableViewPlaceHolder.xib",
+				"${PODS_ROOT}/../AppFoundation/Utils/ImageUtil/PortraPickerMenu.xib",
+				"${PODS_ROOT}/../AppFoundation/Utils/ShareUtil/GBShareCell.xib",
+				"${PODS_ROOT}/../AppFoundation/Utils/ShareUtil/GBShareView.xib",
+				"${PODS_ROOT}/../AppFoundation/Resource/Media.xcassets/back.imageset/back.png",
+				"${PODS_ROOT}/../AppFoundation/Resource/Media.xcassets/header.imageset/header.png",
+				"${PODS_ROOT}/../AppFoundation/Resource/Media.xcassets/header.imageset/header@2x.png",
+				"${PODS_ROOT}/../AppFoundation/Resource/Media.xcassets/header.imageset/header@3x.png",
+				"${PODS_ROOT}/../AppFoundation/Resource/Media.xcassets/Search24px.imageset/Search24px.png",
+				"${PODS_ROOT}/../AppFoundation/Resource/Media.xcassets/userbgimg.imageset/userbgimg.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -1182,42 +1277,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppFoundationDemo/Pods-AppFoundationDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		21529C09C2F3AD6AF7517ABF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppFoundationDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		42B6DFFF83D630B4AE96C600 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppFoundation-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6D8129C2CC94B37C0E7C92B4 /* [CP] Copy Pods Resources */ = {
@@ -1251,62 +1310,15 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppFoundation/Pods-AppFoundation-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FA8237E833CAFEFDA4D7E4E6 /* [CP] Embed Pods Frameworks */ = {
+		F71377A9E351DE9CC71E5777 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AppFoundationDemo/Pods-AppFoundationDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CYLTableViewPlaceHolder/CYLTableViewPlaceHolder.framework",
-				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
-				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
-				"${BUILT_PRODUCTS_DIR}/LBXScan/LBXScan.framework",
-				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/NSDate-Escort/NSDate_Escort.framework",
-				"${BUILT_PRODUCTS_DIR}/RKNotificationHub/RKNotificationHub.framework",
-				"${BUILT_PRODUCTS_DIR}/RefreshControl/RefreshControl.framework",
-				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/ScottAlertController/ScottAlertController.framework",
-				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
-				"${BUILT_PRODUCTS_DIR}/UIButton+HHAddLayout/UIButton_HHAddLayout.framework",
-				"${BUILT_PRODUCTS_DIR}/UIButton-SSEdgeInsets/UIButton_SSEdgeInsets.framework",
-				"${BUILT_PRODUCTS_DIR}/VIPhotoView/VIPhotoView.framework",
-				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
-				"${BUILT_PRODUCTS_DIR}/YBPopupMenu/YBPopupMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/ZBarSDK/ZBarSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CYLTableViewPlaceHolder.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBXScan.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDate_Escort.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RKNotificationHub.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RefreshControl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScottAlertController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIButton_HHAddLayout.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIButton_SSEdgeInsets.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VIPhotoView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBPopupMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZBarSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1316,6 +1328,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F5A25761F1EF1D200003429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F5A25841F1EF1D200003429 /* ViewController.m in Sources */,
+				8F5A25811F1EF1D200003429 /* AppDelegate.m in Sources */,
+				8F5A257E1F1EF1D200003429 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA25B32D1F1C5FD800F8844B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1323,6 +1345,7 @@
 				BA25B42F1F1C608300F8844B /* ScanResultViewController.m in Sources */,
 				BA25B43A1F1C608300F8844B /* GBSearchKeyWordController.m in Sources */,
 				BA25B4191F1C608300F8844B /* GBConversationViewController.m in Sources */,
+				8F447C3B1F25880D00854531 /* NSString+GBSize.m in Sources */,
 				BA25B4251F1C608300F8844B /* UIAlertView+LBXAlertAction.m in Sources */,
 				BA25B4341F1C608300F8844B /* GBRegular.m in Sources */,
 				BA25B40E1F1C608300F8844B /* GBBaseViewController.m in Sources */,
@@ -1370,31 +1393,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA25B4F81F1C84C400F8844B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA25B5061F1C84C400F8844B /* ViewController.m in Sources */,
-				BA25B5031F1C84C400F8844B /* AppDelegate.m in Sources */,
-				BA25B5001F1C84C400F8844B /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BA25B5071F1C84C400F8844B /* Main.storyboard */ = {
+		8F5A25851F1EF1D200003429 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BA25B5081F1C84C400F8844B /* Base */,
+				8F5A25861F1EF1D200003429 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		BA25B50C1F1C84C400F8844B /* LaunchScreen.storyboard */ = {
+		8F5A258A1F1EF1D200003429 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BA25B50D1F1C84C400F8844B /* Base */,
+				8F5A258B1F1EF1D200003429 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1402,6 +1415,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8F5A258F1F1EF1D200003429 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F8559B9320C152C9BC98C0D /* Pods-AppFoundationDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DS9W6935FH;
+				INFOPLIST_FILE = AppFoundationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chengb.stores;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8F5A25901F1EF1D200003429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6881D056535FED4204E746 /* Pods-AppFoundationDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DS9W6935FH;
+				INFOPLIST_FILE = AppFoundationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chengb.stores;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		BA25B3381F1C5FD800F8844B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1568,35 +1609,18 @@
 			};
 			name = Release;
 		};
-		BA25B5111F1C84C400F8844B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F8559B9320C152C9BC98C0D /* Pods-AppFoundationDemo.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				INFOPLIST_FILE = AppFoundationDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = chengb.AppFoundationDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		BA25B5121F1C84C400F8844B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED6881D056535FED4204E746 /* Pods-AppFoundationDemo.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				INFOPLIST_FILE = AppFoundationDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = chengb.AppFoundationDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8F5A258E1F1EF1D200003429 /* Build configuration list for PBXNativeTarget "AppFoundationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F5A258F1F1EF1D200003429 /* Debug */,
+				8F5A25901F1EF1D200003429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BA25B32C1F1C5FD800F8844B /* Build configuration list for PBXProject "AppFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1611,15 +1635,6 @@
 			buildConfigurations = (
 				BA25B33B1F1C5FD800F8844B /* Debug */,
 				BA25B33C1F1C5FD800F8844B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BA25B5101F1C84C400F8844B /* Build configuration list for PBXNativeTarget "AppFoundationDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA25B5111F1C84C400F8844B /* Debug */,
-				BA25B5121F1C84C400F8844B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

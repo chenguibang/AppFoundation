@@ -13,6 +13,9 @@
 #import <ShareSDK/ShareSDK+Base.h>
 @implementation GBShareView
 
+
+
+
 - (instancetype)init
 {
     self = [super init];
@@ -83,7 +86,7 @@
         
     
         
-        
+
         
     }
     return self;
@@ -201,31 +204,31 @@
                                  
                                  [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeQQ]:@{
                                          @"title":@"手机QQ",
-                                         @"icon":@"QQ好友sns_icon_24",
+                                         @"icon":@"QQ好友sns_icon_24_s",
                                          
                                          },
                                  
                                  [NSNumber numberWithUnsignedInteger:SSDKPlatformSubTypeQZone]:@{
                                          @"title":@"QQ空间",
-                                         @"icon":@"QQ空间sns_icon_6",
+                                         @"icon":@"QQ空间sns_icon_6_s",
                                          
                                          },
                                  
                                  [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeWechat]:@{
                                          @"title":@"微信好友",
-                                         @"icon":@"微信sns_icon_22",
+                                         @"icon":@"微信sns_icon_22_s",
                                          
                                          },
                                  
                                  [NSNumber numberWithUnsignedInteger:SSDKPlatformSubTypeWechatTimeline]:@{
                                          @"title":@"朋友圈",
-                                         @"icon":@"朋友圈sns_icon_23",
+                                         @"icon":@"朋友圈sns_icon_23_s",
                                          
                                          },
                                  
                                  [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeSinaWeibo]:@{
                                          @"title":@"微博",
-                                         @"icon":@"新浪微博sns_icon_1",
+                                         @"icon":@"新浪微博sns_icon_1_s",
                                          
                                          },
                                  
@@ -249,7 +252,7 @@
                                  
                                  [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeMail]:@{
                                          @"title":@"邮件",
-                                         @"icon":@"sharemail",
+                                         @"icon":@"back",
                                          },
                                  };
     NSMutableArray<GBSSDKSharePlatform *> *platFroms = [[NSMutableArray alloc]init];
