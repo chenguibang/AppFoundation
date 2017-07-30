@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <MJRefresh/MJRefresh.h>
 #import <RefreshControl/UIScrollView+RefreshControl.h>
-@interface GBTableViewController : UITableViewController
-
+@interface GBTableViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic ,strong) UITableView *tableView;
 @property (nonatomic, assign) NSUInteger pageIndex;
 
 - (void)addTopRefreshControlUsingBlock:(void (^)())callback;

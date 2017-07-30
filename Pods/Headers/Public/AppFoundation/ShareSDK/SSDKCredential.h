@@ -1,0 +1,1 @@
+../../../../../AppFoundation/ThirdPart/ShareSDK/ShareSDK/ShareSDK.framework/Headers/SSDKCredential.h

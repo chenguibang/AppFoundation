@@ -1,0 +1,1 @@
+../../../../../AppFoundation/ThirdPart/ShareSDK/ShareSDK/Support/Required/ShareSDKConnector.framework/Headers/ShareSDKConnector.h

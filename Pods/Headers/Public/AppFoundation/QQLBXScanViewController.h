@@ -1,0 +1,1 @@
+../../../../AppFoundation/GBFoundation/GBQRScan/QQLBXScanViewController.h
