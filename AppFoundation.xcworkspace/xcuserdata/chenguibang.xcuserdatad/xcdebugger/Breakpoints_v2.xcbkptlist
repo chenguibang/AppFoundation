@@ -24,12 +24,12 @@
                   moduleName = "AppFoundationDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chenguibang/Desktop/BGGPlace/AppFoundation/AppFoundation/GBFoundation/GBQRScan/CreateBarCodeViewController.m"
-                  timestampString = "522123409.246781"
+                  timestampString = "523169019.958606"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
                   endingLineNumber = "19"
-                  offsetFromSymbolStart = "20">
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -39,12 +39,12 @@
                   moduleName = "AppFoundationDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chenguibang/Desktop/BGGPlace/AppFoundation/AppFoundation/GBFoundation/GBQRScan/CreateBarCodeViewController.m"
-                  timestampString = "522123409.248625"
+                  timestampString = "523169019.962092"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
                   endingLineNumber = "19"
-                  offsetFromSymbolStart = "64">
+                  offsetFromSymbolStart = "49">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -110,6 +110,22 @@
             startingLineNumber = "260"
             endingLineNumber = "260"
             landmarkName = "-setDefultView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppFoundationDemo/RootViewController.m"
+            timestampString = "523169011.332297"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

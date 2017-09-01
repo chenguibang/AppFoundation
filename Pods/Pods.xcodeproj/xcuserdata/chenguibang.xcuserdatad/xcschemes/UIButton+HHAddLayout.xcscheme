@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '85B850963B9019E2137936E2FD1870A7'
+               BlueprintIdentifier = 'EF2953940117CA8C64D999DAAA701782'
                BlueprintName = 'UIButton+HHAddLayout'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libUIButton+HHAddLayout.a'>

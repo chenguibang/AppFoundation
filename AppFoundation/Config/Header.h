@@ -38,6 +38,21 @@
 
 
 #import "AppDefine.h"
-#import "AppNotifitionCenter.h"
-
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <UITextField+Max/UITextField+Max.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "APPManager.h"
+#import <AppFoundation/GBBaseViewController.h>
+#import <BlocksKit/BlocksKit.h>
+#import <BlocksKit/BlocksKit+UIKit.h>
+#import <AppFoundation/GBTableViewController.h>
+#import <UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
+#import <MJExtension/MJExtension.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <YYKit/YYKit.h>
+#import <SDCycleScrollView/SDCycleScrollView.h>
+#import "NSDate+GBExt.h"
+#import "PortraitPicker.h"
+#import "UISearchBar+GBExt.h"
 #endif /* Header_h */
+

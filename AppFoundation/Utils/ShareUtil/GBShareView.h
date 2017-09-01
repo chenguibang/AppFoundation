@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GBSSDKSharePlatform.h"
-
+#import "GBShareParam.h"
 @interface GBShareView : UIView<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>{
     UIImageView *rightTip;
 }
@@ -17,10 +17,11 @@
 @property (nonatomic, strong) UICollectionView *bottomContentView;
 @property (nonatomic, strong) NSMutableArray *topIcons;
 @property (nonatomic, strong) NSMutableArray *bottomIcons;
-
+@property (nonatomic ,strong) GBShareParam *shareParam;
 
 - (void)showAt:(UIViewController *)controller;
 
+- (void)showAt:(UIViewController *)controller shareParam:(GBShareParam *)shareParam;
 
 - (void)setDefultView;
 

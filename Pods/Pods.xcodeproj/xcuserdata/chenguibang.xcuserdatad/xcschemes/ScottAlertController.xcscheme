@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E837ACD7579A861EEAEC5BF3B01A218C'
+               BlueprintIdentifier = '76A61D8E44BFFEB876D82319043ACD29'
                BlueprintName = 'ScottAlertController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libScottAlertController.a'>

@@ -32,6 +32,10 @@
 
 + (void)setupShareWith:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
+
++ (void)yt_setupShareWith:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+
+
 + (void)setupBugly;
 
 @end

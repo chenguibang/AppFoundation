@@ -1,6 +1,6 @@
 {
   "name": "AppFoundation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "summary": "AppFoundation. for quik development",
   "description": "AppFoundation. for quik development AppFoundation. for quik development",
   "homepage": "https://github.com/chenguibang/AppFoundation.git",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/chenguibang/AppFoundation.git",
-    "tag": "0.0.2"
+    "tag": "0.0.3"
   },
   "source_files": [
     "AppFoundation",
@@ -24,7 +24,8 @@
   ],
   "resources": [
     "AppFoundation/**/*.xib",
-    "AppFoundation/Resource/Media.xcassets/**/*.png"
+    "AppFoundation/Resource/Media.xcassets/**/*.png",
+    "AppFoundation/**/*.bundle"
   ],
   "frameworks": [
     "UIKit",
@@ -116,6 +117,42 @@
     ],
     "JKCategories": [
       "~> 1.5"
+    ],
+    "ReactiveObjC": [
+      "~> 3.0.0"
+    ],
+    "DBCorner": [
+      "~> 0.1.1"
+    ],
+    "ZYCornerRadius": [
+      "~> 1.0.2"
+    ],
+    "UIImage+Additions": [
+      "~> 2.1.1"
+    ],
+    "UITextField+Max": [
+      "~> 1.0.2"
+    ],
+    "AFNetworking": [
+      "~> 3.1.0"
+    ],
+    "AliyunOSSiOS": [
+      "~> 2.6.0"
+    ],
+    "BlocksKit": [
+      "~> 2.2.5"
+    ],
+    "UITableView+FDTemplateLayoutCell": [
+      "~> 1.6"
+    ],
+    "YYKit": [
+      "~> 1.0.9"
+    ],
+    "ZJScrollPageView": [
+      "~> 0.4.0"
+    ],
+    "ALQRCode": [
+      "~> 1.0.0"
     ]
   },
   "prefix_header_contents": "#ifdef __OBJC__\n\n#import \"Header.h\"\n\n\n\n#endif /* __OBJC__*/"

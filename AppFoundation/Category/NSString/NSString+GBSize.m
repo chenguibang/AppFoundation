@@ -14,6 +14,10 @@
 + (CGSize)gb_sizeWithString:(NSString*)str andFont:(UIFont*)font  andMaxSize:(CGSize)size{
     NSDictionary*attrs =@{NSFontAttributeName: font};
     return  [str boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs  context:nil].size;
+    
 }
 
++ (NSString*)gb_nullCheck:(NSString *)string{
+    return string ? string : @"";
+}
 @end

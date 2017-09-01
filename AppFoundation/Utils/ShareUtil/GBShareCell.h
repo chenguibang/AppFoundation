@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GBSSDKSharePlatform.h"
+
 @interface GBShareCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIButton *iconBtn;

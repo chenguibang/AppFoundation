@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AppFoundation"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "AppFoundation. for quik development "
 
   # This description is used to generate tags and improve search results.
@@ -107,7 +107,7 @@ AppFoundation. for quik development AppFoundation. for quik development
   #
 
   #s.resource  = "AppFoundation/**/*.xib"
-   s.resources = "AppFoundation/**/*.xib", "AppFoundation/Resource/Media.xcassets/**/*.png"
+   s.resources = "AppFoundation/**/*.xib", "AppFoundation/Resource/Media.xcassets/**/*.png","AppFoundation/**/*.bundle"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -169,10 +169,18 @@ s.dependency 'Bugly'
 s.dependency 'JSONKit', '~> 1.5pre'
 s.dependency 'MBProgressHUD', '~> 1.0.0'
 s.dependency 'JKCategories', '~> 1.5'
-
-
-
-
+s.dependency 'ReactiveObjC', '~> 3.0.0'
+s.dependency 'DBCorner', '~> 0.1.1'
+s.dependency 'ZYCornerRadius', '~> 1.0.2'
+s.dependency 'UIImage+Additions', '~> 2.1.1'
+s.dependency 'UITextField+Max', '~> 1.0.2'
+s.dependency 'AFNetworking', '~> 3.1.0'
+s.dependency 'AliyunOSSiOS', '~> 2.6.0'
+s.dependency 'BlocksKit', '~> 2.2.5'
+s.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.6'
+s.dependency 'YYKit', '~> 1.0.9'
+s.dependency 'ZJScrollPageView', '~> 0.4.0'
+s.dependency 'QrcodeBuilder', '~> 1.0.1'
 s.prefix_header_contents = <<-EOS
 #ifdef __OBJC__
 

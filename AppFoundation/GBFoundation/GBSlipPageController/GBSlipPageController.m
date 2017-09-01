@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setupView];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scrollViewEnableChange:) name:NOTI_HOMEVCSHOW object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scrollViewEnableChange:) name:NOTI_HOMEVCSHOW object:nil];
 }
 
 - (void)didReceiveMemoryWarning {

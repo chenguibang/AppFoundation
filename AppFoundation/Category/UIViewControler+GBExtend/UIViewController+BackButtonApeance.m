@@ -9,6 +9,7 @@
 #import "UIViewController+BackButtonApeance.h"
 #import "UIImage+GBExpand.h"
 #import "APPManager.h"
+#import <UIViewController+JKBackButtonItemTitle.h>
 @implementation UIViewController(BackButtonApeance)
 
 + (void)load
@@ -22,17 +23,17 @@
 {
     // Forward to primary implementation.
     [self gbback_viewWillAppear:animated];
+
     UIImage *backButtonImage = [[UIImage imageNamed:[APPManager shared].theme.backButtonImage] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
-    UIBarButtonItem *buttonItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class]]];
-    UIOffset offset;
-    offset.horizontal = -500;
-    
-    [buttonItem setBackButtonTitlePositionAdjustment:offset forBarMetrics:UIBarMetricsDefault];
-//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin) forBarMetrics:UIBarMetricsDefault];
-    
-    
+//    UIBarButtonItem *buttonItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class]]];
+//    UIOffset offset;
+//    offset.horizontal = -500;
+//    
+//    [buttonItem setBackButtonTitlePositionAdjustment:offset forBarMetrics:UIBarMetricsDefault];
+
+
     
     self.navigationItem.titleView.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = YES;
@@ -47,6 +48,10 @@
 //    [self.navigationController.navigationBar setShadowImage:[UIImage imageNamed:@"5"]];
   
    
+}
+
+- (NSString *)jk_navigationItemBackBarButtonTitle{
+    return @"";
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle{

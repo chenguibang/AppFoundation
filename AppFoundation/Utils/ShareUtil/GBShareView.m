@@ -93,6 +93,11 @@
 }
 
 
+- (void)showAt:(UIViewController *)controller shareParam:(GBShareParam *)shareParam{
+    self.shareParam = shareParam;
+    [self showAt:controller];
+}
+
 - (void)showAt:(UIViewController *)controller{
 //    [self.topContentView reloadData];
 //    [self.bottomContentView reloadData];
@@ -151,33 +156,33 @@
     
     NSLog(@"分享到%@",cell.iconBtn.titleLabel.text);
     
-    
+    NSURL *shareUrl = [NSURL URLWithString:self.shareParam.url];
     
     
     
     
     //1、创建分享参数（必要）
     NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
-    [shareParams SSDKSetupShareParamsByText:@"分享内容"
-                                     images:[UIImage imageNamed:@"传入的图片名"]
-                                        url:[NSURL URLWithString:@"http://mob.com"]
-                                      title:@"分享标题"
+    [shareParams SSDKSetupShareParamsByText:self.shareParam.content ? self.shareParam.content : @""
+                                     images:self.shareParam.image
+                                        url:shareUrl
+                                      title:self.shareParam.title
                                        type:SSDKContentTypeAuto];
     
     // 定制新浪微博的分享内容
-    [shareParams SSDKSetupSinaWeiboShareParamsByText:@"定制新浪微博的分享内容"                                       title:nil
-                                               image:[UIImage imageNamed:@"传入的图片名"]
-                                                 url:nil
+    [shareParams SSDKSetupSinaWeiboShareParamsByText:self.shareParam.content ? self.shareParam.content : @""                                       title:self.shareParam.title
+                                               image:self.shareParam.image
+                                                 url:shareUrl
                                             latitude:0
                                            longitude:0
                                             objectID:nil
                                                 type:SSDKContentTypeAuto];
     
     // 定制微信好友的分享内容
-    [shareParams SSDKSetupWeChatParamsByText:@"定制微信的分享内容"                 title:@"title"
-                                         url:[NSURL URLWithString:@"http://mob.com"]
-                                  thumbImage:nil
-                                       image:[UIImage imageNamed:@"传入的图片名"]
+    [shareParams SSDKSetupWeChatParamsByText:self.shareParam.content ? self.shareParam.content : @"" title:self.shareParam.title
+                                         url:shareUrl
+                                  thumbImage:self.shareParam.image
+                                       image:self.shareParam.image
                                 musicFileURL:nil
                                      extInfo:nil
                                     fileData:nil
@@ -185,11 +190,10 @@
                                         type:SSDKContentTypeAuto  forPlatformSubType:SSDKPlatformSubTypeWechatSession];// 微信好友子平台
 
     
-    [shareParams SSDKSetupMailParamsByText:@"邮件文本内容" title:@"邮件分享" images:@"" attachments:nil recipients:nil ccRecipients:nil bccRecipients:nil type:SSDKContentTypeAuto];
+    [shareParams SSDKSetupMailParamsByText:self.shareParam.content ? self.shareParam.content : @"" title:self.shareParam.title images:self.shareParam.image attachments:nil recipients:nil ccRecipients:nil bccRecipients:nil type:SSDKContentTypeAuto];
     
     if (cell.sharePlatform.type == GBSSDKSharePlatformSafari) {
-        NSURL* url = [[ NSURL alloc ] initWithString :@"http://www.baidu.com"];
-        [[UIApplication sharedApplication ]openURL:url];
+        [[UIApplication sharedApplication ]openURL:shareUrl];
     }
     
     
@@ -252,7 +256,7 @@
                                  
                                  [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeMail]:@{
                                          @"title":@"邮件",
-                                         @"icon":@"back",
+                                         @"icon":@"sharemail",
                                          },
                                  };
     NSMutableArray<GBSSDKSharePlatform *> *platFroms = [[NSMutableArray alloc]init];

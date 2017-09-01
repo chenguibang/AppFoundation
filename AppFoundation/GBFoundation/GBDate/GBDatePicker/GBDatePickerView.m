@@ -10,6 +10,7 @@
 #import "APPManager.h"
 #import <ScottAlertController/ScottAlertViewController.h>
 #import "ScottAlertViewController+BlurEffects.h"
+#import <NSDate+GBExt.h>
 @implementation GBDatePickerView
 
 
@@ -34,6 +35,10 @@
     [self.datePicker setDate:[NSDate date] animated:YES];
 }
 - (IBAction)sure:(id)sender {
+    
+    if (self.datePickResult) {
+        self.datePickResult([self.datePicker.date gb_timestamp13]);
+    }
     [self dismiss];
 }
 

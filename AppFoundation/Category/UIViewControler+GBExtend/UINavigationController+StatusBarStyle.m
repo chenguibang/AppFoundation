@@ -8,6 +8,7 @@
 
 #import "UINavigationController+StatusBarStyle.h"
 #import "APPManager.h"
+#import "UIViewController+StatusBarStyle.h"
 @implementation UINavigationController(StatusBarStyle)
 
 - (void)viewDidLoad {
@@ -21,6 +22,10 @@
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
+    UIViewController<StatusBarStyleHandle> *topViewController = self.topViewController;
+    if ([topViewController respondsToSelector:@selector(gb_preferredStatusBarStyle)]) {
+        return [topViewController gb_preferredStatusBarStyle];;
+    }
     return [APPManager shared].theme.preferredStatusBarStyle;
 }
 

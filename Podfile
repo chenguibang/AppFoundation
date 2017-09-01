@@ -41,6 +41,19 @@ target 'AppFoundation' do
     pod 'JSONKit', '~> 1.5pre'
     pod 'MBProgressHUD', '~> 1.0.0'
     pod 'JKCategories', '~> 1.5'
+    pod 'ReactiveObjC', '~> 3.0.0'
+    pod 'DBCorner', '~> 0.1.1'
+    pod 'ZYCornerRadius', '~> 1.0.2'
+    pod 'UIImage+Additions', '~> 2.1.1'
+    pod 'UITextField+Max', '~> 1.0.2'           #UITextField 长度限制
+    pod 'AFNetworking', '~> 3.1.0'
+    pod 'RestKit', '~> 0.27.1'
+    pod 'AliyunOSSiOS', '~> 2.6.0'              #阿里云OOS
+    pod 'BlocksKit', '~> 2.2.5'
+    pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
+    pod 'YYKit', '~> 1.0.9'
+    pod 'ZJScrollPageView', '~> 0.4.0' #标签
+    pod 'QrcodeBuilder', '~> 1.0.1'
 end
 
 

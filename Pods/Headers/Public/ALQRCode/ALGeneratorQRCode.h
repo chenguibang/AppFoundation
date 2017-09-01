@@ -1,0 +1,1 @@
+../../../ALQRCode/ALQRCodeDemo/ALQRCodeDemo/ALQRCode/ALGeneratorQRCode.h

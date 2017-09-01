@@ -10,7 +10,7 @@
 #import "LBXAlertAction.h"
 #import "LBXScanNative.h"
 #import "ZXingWrapper.h"
-#import "UIImageView+CornerRadius.h"
+#import <ZYCornerRadius/UIImageView+CornerRadius.h>
 #import "Global.h"
 
 @interface CreateBarCodeViewController ()

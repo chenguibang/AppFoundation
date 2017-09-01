@@ -12,4 +12,5 @@
 
 + (CGSize)gb_sizeWithString:(NSString*)str andFont:(UIFont*)font  andMaxSize:(CGSize)size;
 
++ (NSString*)gb_nullCheck:(NSString *)string;
 @end

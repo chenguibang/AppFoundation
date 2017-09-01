@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B2F36B0E344E9F8D3F02CAE9F6FE3BF5'
+               BlueprintIdentifier = '6F4CAFBDC597C7AE53B13BA7A0E43826'
                BlueprintName = 'JKCategories'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libJKCategories.a'>
