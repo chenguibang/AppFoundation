@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A468FC419D8082E795BC54EC9437B5F0'
+               BlueprintIdentifier = '81121E646F3EA61F3D2C5DDECEC450B8'
                BlueprintName = 'ZJScrollPageView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libZJScrollPageView.a'>

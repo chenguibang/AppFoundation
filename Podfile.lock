@@ -15,11 +15,9 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - AliyunOSSiOS (2.6.2)
-  - ALQRCode (1.0.0)
   - AppFoundation (0.0.3):
     - AFNetworking (~> 3.1.0)
     - AliyunOSSiOS (~> 2.6.0)
-    - ALQRCode (~> 1.0.0)
     - BlocksKit (~> 2.2.5)
     - Bugly
     - CYLTableViewPlaceHolder (~> 1.0.8)
@@ -36,6 +34,7 @@ PODS:
     - MJRefresh (~> 3.1.12)
     - NSDate-Escort (~> 1.8.2)
     - pop
+    - QrcodeBuilder (~> 1.0.1)
     - ReactiveObjC (~> 3.0.0)
     - RefreshControl (~> 2.0.5)
     - RKNotificationHub
@@ -186,7 +185,6 @@ DEPENDENCIES:
   - WebViewJavascriptBridge (~> 6.0.2)
   - YBPopupMenu (~> 0.1.2)
   - YYKit (~> 1.0.9)
-  - ZJScrollPageView (~> 0.4.0)
   - ZYCornerRadius (~> 1.0.2)
 
 EXTERNAL SOURCES:
@@ -196,8 +194,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   AliyunOSSiOS: 602bc287cfa30a2a6375907e684ec66d0c45e3f1
-  ALQRCode: 5826079a88b8fc35e7c0638fd5ab3167ec5228f9
-  AppFoundation: 3ed4926f31ee6ae7fec59bfc60ec18f081eb18d7
+  AppFoundation: 0975b50c8e83a754c7b023bfa7eae6abadfab6a0
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   Bugly: da3c02408c14838d498429320545a8e439392978
   CYLTableViewPlaceHolder: 44075c119aab78bbc514c75d771d6565e19938e8
@@ -242,6 +239,6 @@ SPEC CHECKSUMS:
   ZJScrollPageView: dd8778909cb2413782616ab156e873956f6b0682
   ZYCornerRadius: f0af817be7805b5c63d793042ca7a03f81e14069
 
-PODFILE CHECKSUM: 10bdbfe2264cd9bd1d1e547e6e630a04130c4de4
+PODFILE CHECKSUM: 93b2c11273a591c2c3a0e2677d26f32184acfbe4
 
 COCOAPODS: 1.3.0.beta.2

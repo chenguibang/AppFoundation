@@ -151,8 +151,8 @@
     "ZJScrollPageView": [
       "~> 0.4.0"
     ],
-    "ALQRCode": [
-      "~> 1.0.0"
+    "QrcodeBuilder": [
+      "~> 1.0.1"
     ]
   },
   "prefix_header_contents": "#ifdef __OBJC__\n\n#import \"Header.h\"\n\n\n\n#endif /* __OBJC__*/"

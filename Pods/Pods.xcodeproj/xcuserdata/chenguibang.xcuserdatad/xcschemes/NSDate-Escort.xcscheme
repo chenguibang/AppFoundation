@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A87951B874DF85E340E0294B7E26E3C4'
+               BlueprintIdentifier = '425ED87A721EE51FDEEA5F8474680AB9'
                BlueprintName = 'NSDate-Escort'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libNSDate-Escort.a'>

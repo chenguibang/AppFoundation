@@ -90,14 +90,8 @@
 		BA25B3FA1F1C608300F8844B /* UIViewController+BackButtonApeance.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B3511F1C608300F8844B /* UIViewController+BackButtonApeance.m */; };
 		BA25B3FB1F1C608300F8844B /* UIViewController+BackButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25B3521F1C608300F8844B /* UIViewController+BackButtonHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA25B3FC1F1C608300F8844B /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B3531F1C608300F8844B /* UIViewController+BackButtonHandler.m */; };
-		BA25B3FD1F1C608300F8844B /* AppClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25B3561F1C608300F8844B /* AppClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA25B3FE1F1C608300F8844B /* AppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B3571F1C608300F8844B /* AppClient.m */; };
-		BA25B3FF1F1C608300F8844B /* UserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25B3581F1C608300F8844B /* UserInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA25B4001F1C608300F8844B /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B3591F1C608300F8844B /* UserInfo.m */; };
 		BA25B4011F1C608300F8844B /* APPManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25B35A1F1C608300F8844B /* APPManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA25B4021F1C608300F8844B /* APPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B35B1F1C608300F8844B /* APPManager.m */; };
-		BA25B4031F1C608300F8844B /* AppNotifitionCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25B35D1F1C608300F8844B /* AppNotifitionCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA25B4041F1C608300F8844B /* AppNotifitionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B35E1F1C608300F8844B /* AppNotifitionCenter.m */; };
 		BA25B4051F1C608300F8844B /* APPTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25B35F1F1C608300F8844B /* APPTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA25B4061F1C608300F8844B /* APPTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25B3601F1C608300F8844B /* APPTheme.m */; };
 		BA25B4071F1C608300F8844B /* Header.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25B3611F1C608300F8844B /* Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -265,14 +259,8 @@
 		BA25B3511F1C608300F8844B /* UIViewController+BackButtonApeance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonApeance.m"; sourceTree = "<group>"; };
 		BA25B3521F1C608300F8844B /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
 		BA25B3531F1C608300F8844B /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
-		BA25B3561F1C608300F8844B /* AppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppClient.h; sourceTree = "<group>"; };
-		BA25B3571F1C608300F8844B /* AppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppClient.m; sourceTree = "<group>"; };
-		BA25B3581F1C608300F8844B /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
-		BA25B3591F1C608300F8844B /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		BA25B35A1F1C608300F8844B /* APPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPManager.h; sourceTree = "<group>"; };
 		BA25B35B1F1C608300F8844B /* APPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPManager.m; sourceTree = "<group>"; };
-		BA25B35D1F1C608300F8844B /* AppNotifitionCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNotifitionCenter.h; sourceTree = "<group>"; };
-		BA25B35E1F1C608300F8844B /* AppNotifitionCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNotifitionCenter.m; sourceTree = "<group>"; };
 		BA25B35F1F1C608300F8844B /* APPTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPTheme.h; sourceTree = "<group>"; };
 		BA25B3601F1C608300F8844B /* APPTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPTheme.m; sourceTree = "<group>"; };
 		BA25B3611F1C608300F8844B /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -889,10 +877,6 @@
 		BA25B3551F1C608300F8844B /* AppClient */ = {
 			isa = PBXGroup;
 			children = (
-				BA25B3561F1C608300F8844B /* AppClient.h */,
-				BA25B3571F1C608300F8844B /* AppClient.m */,
-				BA25B3581F1C608300F8844B /* UserInfo.h */,
-				BA25B3591F1C608300F8844B /* UserInfo.m */,
 			);
 			path = AppClient;
 			sourceTree = "<group>";
@@ -900,8 +884,6 @@
 		BA25B35C1F1C608300F8844B /* AppNotifitionCenter */ = {
 			isa = PBXGroup;
 			children = (
-				BA25B35D1F1C608300F8844B /* AppNotifitionCenter.h */,
-				BA25B35E1F1C608300F8844B /* AppNotifitionCenter.m */,
 			);
 			path = AppNotifitionCenter;
 			sourceTree = "<group>";
@@ -1189,7 +1171,6 @@
 				BA25B4281F1C608300F8844B /* LBXAlertAction.h in Headers */,
 				BA25B3F51F1C608300F8844B /* UIImage+GBExpand.h in Headers */,
 				BA25B4371F1C608300F8844B /* GBSearchHistoryController.h in Headers */,
-				BA25B3FF1F1C608300F8844B /* UserInfo.h in Headers */,
 				8F401EC41F591863005327B8 /* UISearchBarToolBar.h in Headers */,
 				BA25B4391F1C608300F8844B /* GBSearchKeyWordController.h in Headers */,
 				BA25B43D1F1C608300F8844B /* GBSearchView.h in Headers */,
@@ -1215,9 +1196,7 @@
 				8F5A254E1F1ED5F300003429 /* AppDefine.h in Headers */,
 				8F5A25091F1E509100003429 /* GBShareView.h in Headers */,
 				8F5A25061F1E509100003429 /* GBShareCell.h in Headers */,
-				BA25B3FD1F1C608300F8844B /* AppClient.h in Headers */,
 				BA25B4051F1C608300F8844B /* APPTheme.h in Headers */,
-				BA25B4031F1C608300F8844B /* AppNotifitionCenter.h in Headers */,
 				BA25B4351F1C608300F8844B /* NSString+GBRegular.h in Headers */,
 				BA25B4401F1C608300F8844B /* GBTableViewController.h in Headers */,
 				BA25B43B1F1C608300F8844B /* GBSearchRootController.h in Headers */,
@@ -1403,7 +1382,7 @@
 				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
 				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
 				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
-				"${PODS_ROOT}/ALQRCode/ALQRCodeDemo/ALQRCodeDemo/ALQRCode/ALQRCode.bundle",
+				"${PODS_ROOT}/../AppFoundation/Category/UISearchBar/UISearchBarToolBar.xib",
 				"${PODS_ROOT}/../AppFoundation/GBFoundation/GBDate/GBDatePicker/GBDatePickerView.xib",
 				"${PODS_ROOT}/../AppFoundation/GBFoundation/GBQRScan/ScanResultViewController.xib",
 				"${PODS_ROOT}/../AppFoundation/GBFoundation/GBSearchView/GBSearchView.xib",
@@ -1540,7 +1519,6 @@
 				8F5D6B1D1F5670EE005AAD1C /* GBShareParam.m in Sources */,
 				BA25B44A1F1C608300F8844B /* ZJBLTimerButton.m in Sources */,
 				BA25B41F1F1C608300F8844B /* Global.m in Sources */,
-				BA25B4041F1C608300F8844B /* AppNotifitionCenter.m in Sources */,
 				BA25B4271F1C608300F8844B /* UIWindow+LBXHierarchy.m in Sources */,
 				BA25B4151F1C608300F8844B /* GBTableViewControllerTest.m in Sources */,
 				BA25B4211F1C608300F8844B /* UIActionSheet+LBXAlertAction.m in Sources */,
@@ -1548,9 +1526,7 @@
 				BA25B4171F1C608300F8844B /* GBConversationListViewController.m in Sources */,
 				8F5A4F781F3F19930014EE14 /* NSDate+GBExt.m in Sources */,
 				BA25B4131F1C608300F8844B /* GBFoundationTestRoot.m in Sources */,
-				BA25B4001F1C608300F8844B /* UserInfo.m in Sources */,
 				8F726E0F1F2F0E6500BDD61D /* GBImageTextFiled.m in Sources */,
-				BA25B3FE1F1C608300F8844B /* AppClient.m in Sources */,
 				BA25B46C1F1C608300F8844B /* PortraitPicker.m in Sources */,
 				BA25B44C1F1C608300F8844B /* GBWebViewContoller.m in Sources */,
 				BA25B4461F1C608300F8844B /* UITableView+GBPageControl.m in Sources */,

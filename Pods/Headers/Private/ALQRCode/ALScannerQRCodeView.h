@@ -1,1 +1,0 @@
-../../../ALQRCode/ALQRCodeDemo/ALQRCodeDemo/ALQRCode/ALScannerQRCodeView.h

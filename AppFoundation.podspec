@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AppFoundation"
-  s.version      = "0.0.3"
+  s.version      = "1.0.6"
   s.summary      = "AppFoundation. for quik development "
 
   # This description is used to generate tags and improve search results.
@@ -179,7 +179,7 @@ s.dependency 'AliyunOSSiOS', '~> 2.6.0'
 s.dependency 'BlocksKit', '~> 2.2.5'
 s.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.6'
 s.dependency 'YYKit', '~> 1.0.9'
-s.dependency 'ZJScrollPageView', '~> 0.4.0'
+#s.dependency 'ZJScrollPageView', '~> 0.4.0'
 s.dependency 'QrcodeBuilder', '~> 1.0.1'
 s.prefix_header_contents = <<-EOS
 #ifdef __OBJC__

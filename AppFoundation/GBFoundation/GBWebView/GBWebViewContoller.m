@@ -29,6 +29,7 @@
     if (!_webView) {
         _webView = [[WKWebView alloc]initWithFrame:self.view.bounds];
         [self.view addSubview:_webView];
+        _webView.navigationDelegate = self;
         _webViewJavascriptBridge = [WKWebViewJavascriptBridge bridgeForWebView:_webView];
         [_webViewJavascriptBridge setWebViewDelegate:self];
         [WKWebViewJavascriptBridge enableLogging];
@@ -96,7 +97,9 @@
         responseCallback(location);
     }];
 }
-
+- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation{
+    self.title = webView.title;
+}
 
 /*
 #pragma mark - Navigation

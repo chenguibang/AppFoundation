@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6DD9A264F2280CDAE70ABADF3907B3A3'
+               BlueprintIdentifier = 'C76A284C5E9E63053519364434EE1B87'
                BlueprintName = 'RefreshControl'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libRefreshControl.a'>

@@ -52,7 +52,7 @@ target 'AppFoundation' do
     pod 'BlocksKit', '~> 2.2.5'
     pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
     pod 'YYKit', '~> 1.0.9'
-    pod 'ZJScrollPageView', '~> 0.4.0' #标签
+#    pod 'ZJScrollPageView', '~> 0.4.0' #标签
     pod 'QrcodeBuilder', '~> 1.0.1'
 end
 
