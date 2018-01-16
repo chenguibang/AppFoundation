@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface GBImageTextFiled : UITextField
 @property (nonatomic ,strong) UIImageView *imageView;
 @end

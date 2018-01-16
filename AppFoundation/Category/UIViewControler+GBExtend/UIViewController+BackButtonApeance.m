@@ -26,7 +26,10 @@
 
     UIImage *backButtonImage = [[UIImage imageNamed:[APPManager shared].theme.backButtonImage] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    
+        UIOffset offset;
+        offset.horizontal = -500;
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:offset forBarMetrics:UIBarMetricsDefault];
+  
 //    UIBarButtonItem *buttonItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class]]];
 //    UIOffset offset;
 //    offset.horizontal = -500;
@@ -40,8 +43,7 @@
 //    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.barTintColor = [UIColor grayColor];
-//    [self.navigationController.navigationBar setBackIndicatorImage:[UIImage imageNamed:@"12"]];
-    
+//   [self.navigationController.navigationBar setBackIndicatorImage:[UIImage imageNamed:@"12"]];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage gb_imageWithColor:[APPManager shared].theme.navigationBarBackgorundColor] forBarMetrics:UIBarMetricsDefault];
     NSDictionary * dict = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
     self.navigationController.navigationBar.titleTextAttributes = dict;

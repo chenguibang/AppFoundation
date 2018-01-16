@@ -106,6 +106,7 @@
     alertController.tapBackgroundDismissEnable = YES;
     [controller presentViewController:alertController animated:YES completion:nil];
     
+    /*
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.topContentView setContentOffset:CGPointMake((self.topContentView.contentSize.width - self.topContentView.frame.size.width) > 50 ? 50:(self.topContentView.contentSize.width - self.topContentView.frame.size.width) , 0) animated:YES];
         
@@ -121,6 +122,7 @@
         
         [self.bottomContentView setContentOffset:CGPointMake(0, 0) animated:YES];
     });
+     */
 }
 
 #pragma mark - collectionView_delegate
@@ -167,7 +169,7 @@
                                      images:self.shareParam.image
                                         url:shareUrl
                                       title:self.shareParam.title
-                                       type:SSDKContentTypeAuto];
+                                       type:SSDKContentTypeWebPage];
     
     // 定制新浪微博的分享内容
     [shareParams SSDKSetupSinaWeiboShareParamsByText:self.shareParam.content ? self.shareParam.content : @""                                       title:self.shareParam.title
@@ -176,7 +178,7 @@
                                             latitude:0
                                            longitude:0
                                             objectID:nil
-                                                type:SSDKContentTypeAuto];
+                                                type:SSDKContentTypeWebPage];
     
     // 定制微信好友的分享内容
     [shareParams SSDKSetupWeChatParamsByText:self.shareParam.content ? self.shareParam.content : @"" title:self.shareParam.title
@@ -187,10 +189,10 @@
                                      extInfo:nil
                                     fileData:nil
                                 emoticonData:nil
-                                        type:SSDKContentTypeAuto  forPlatformSubType:SSDKPlatformSubTypeWechatSession];// 微信好友子平台
+                                        type:SSDKContentTypeWebPage  forPlatformSubType:SSDKPlatformSubTypeWechatSession];// 微信好友子平台
 
     
-    [shareParams SSDKSetupMailParamsByText:self.shareParam.content ? self.shareParam.content : @"" title:self.shareParam.title images:self.shareParam.image attachments:nil recipients:nil ccRecipients:nil bccRecipients:nil type:SSDKContentTypeAuto];
+    [shareParams SSDKSetupMailParamsByText:self.shareParam.content ? self.shareParam.content : @"" title:self.shareParam.title images:self.shareParam.image attachments:nil recipients:nil ccRecipients:nil bccRecipients:nil type:SSDKContentTypeWebPage];
     
     if (cell.sharePlatform.type == GBSSDKSharePlatformSafari) {
         [[UIApplication sharedApplication ]openURL:shareUrl];
@@ -204,71 +206,87 @@
     }];
 }
 - (void)setDefultView{
-    NSDictionary *plathInfos = @{
+    NSArray *plathInfos = @[
                                  
-                                 [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeQQ]:@{
-                                         @"title":@"手机QQ",
-                                         @"icon":@"QQ好友sns_icon_24_s",
-                                         
-                                         },
-                                 
-                                 [NSNumber numberWithUnsignedInteger:SSDKPlatformSubTypeQZone]:@{
-                                         @"title":@"QQ空间",
-                                         @"icon":@"QQ空间sns_icon_6_s",
-                                         
-                                         },
-                                 
-                                 [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeWechat]:@{
+                                 @{
+                                        @"type":[NSNumber numberWithUnsignedInteger:SSDKPlatformTypeWechat],
                                          @"title":@"微信好友",
                                          @"icon":@"微信sns_icon_22_s",
                                          
                                          },
                                  
-                                 [NSNumber numberWithUnsignedInteger:SSDKPlatformSubTypeWechatTimeline]:@{
+                                 @{     @"type":[NSNumber numberWithUnsignedInteger:SSDKPlatformSubTypeWechatTimeline],
                                          @"title":@"朋友圈",
                                          @"icon":@"朋友圈sns_icon_23_s",
                                          
                                          },
                                  
-                                 [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeSinaWeibo]:@{
+                                 @{     @"type":[NSNumber numberWithUnsignedInteger:SSDKPlatformSubTypeWechatFav],
+                                        @"title":@"微信收藏",
+                                        @"icon":@"sns_icon_37",
+                                        
+                                        },
+                                 
+                                 
+                                 
+                                 @{
+                                     @"type":[NSNumber numberWithUnsignedInteger:SSDKPlatformTypeSinaWeibo],
                                          @"title":@"微博",
                                          @"icon":@"新浪微博sns_icon_1_s",
                                          
                                          },
                                  
-                                 [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeSMS]:@{
-                                         @"title":@"短信",
-                                         @"icon":@"sharesms",
-                                        
-                                         },
-                                 
-                                 [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeCopy]:@{
-                                         @"title":@"复制链接",
-                                         @"icon":@"shareLink",
+                                 @{ @"type":[NSNumber numberWithUnsignedInteger:SSDKPlatformTypeQQ],
+                                         @"title":@"手机QQ",
+                                         @"icon":@"QQ好友sns_icon_24_s",
                                          
                                          },
                                  
-                                 [NSNumber numberWithUnsignedInteger:GBSSDKSharePlatformSafari]:@{
-                                         @"title":@"Safari打开",
-                                         @"icon":@"sharesafari",
+                                 @{@"type":[NSNumber numberWithUnsignedInteger:SSDKPlatformSubTypeQZone],
+                                         @"title":@"QQ空间",
+                                         @"icon":@"QQ空间sns_icon_6_s",
                                          
                                          },
                                  
-                                 [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeMail]:@{
-                                         @"title":@"邮件",
-                                         @"icon":@"sharemail",
-                                         },
-                                 };
+                               
+                                 
+                                
+                                 
+//                                 @{@"type": [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeSMS],
+//                                         @"title":@"短信",
+//                                         @"icon":@"sharesms",
+//
+//                                         },
+//
+//                                 @{ @"type": [NSNumber numberWithUnsignedInteger:SSDKPlatformTypeCopy],
+//                                         @"title":@"复制链接",
+//                                         @"icon":@"shareLink",
+//
+//                                         },
+//
+//                                 @{ @"type":[NSNumber numberWithUnsignedInteger:GBSSDKSharePlatformSafari],
+//                                         @"title":@"Safari打开",
+//                                         @"icon":@"sharesafari",
+//
+//                                         },
+//
+//                                 @{ @"type":[NSNumber numberWithUnsignedInteger:SSDKPlatformTypeMail],
+//                                         @"title":@"邮件",
+//                                         @"icon":@"sharemail",
+//                                         },
+                                 ];
     NSMutableArray<GBSSDKSharePlatform *> *platFroms = [[NSMutableArray alloc]init];
-    for (NSNumber *type in [ShareSDK activePlatforms]) {
+    
+    
+    
+    for (NSDictionary *pinfo in plathInfos) {
+        
         GBSSDKSharePlatform *platFrom = [[GBSSDKSharePlatform alloc]init];
-        platFrom.type = type.unsignedIntegerValue;
-        NSDictionary *pinfo = [plathInfos objectForKey:type];
+        platFrom.type = [pinfo[@"type"] unsignedIntegerValue];
         platFrom.name = pinfo[@"title"];
         platFrom.icon = [UIImage imageNamed:pinfo[@"icon"]];
         [platFroms addObject:platFrom];
-        
-        if ([@[@(SSDKPlatformTypeCopy),@(SSDKPlatformTypeMail),@(SSDKPlatformTypeSMS),@(GBSSDKSharePlatformSafari)] containsObject:type]) {
+        if ([@[@(SSDKPlatformTypeCopy),@(SSDKPlatformTypeMail),@(SSDKPlatformTypeSMS),@(GBSSDKSharePlatformSafari),@(SSDKPlatformSubTypeQZone),@(SSDKPlatformTypeQQ)] containsObject:@(platFrom.type)]) {
             [self.bottomIcons addObject:platFrom];
         }else{
             [self.topIcons addObject:platFrom];
@@ -276,7 +294,6 @@
         
         
     }
-    
     [self.topContentView reloadData];
     [self.bottomContentView reloadData];
 }
