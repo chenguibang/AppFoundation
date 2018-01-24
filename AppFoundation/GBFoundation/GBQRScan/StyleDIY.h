@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <LBXScanViewStyle.h>
-#import <ZXBarcodeFormat.h>
-
+#import <LBXScan/LBXScanViewStyle.h>
+#import <LBXScan/ZXBarcodeFormat.h>
 
 @interface StyleDIY : NSObject
 

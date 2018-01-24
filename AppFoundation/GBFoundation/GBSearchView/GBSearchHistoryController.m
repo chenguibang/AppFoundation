@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets=NO;
     self.navigationController.automaticallyAdjustsScrollViewInsets = NO;
-    self.navigationItem.titleView = XIB(@"GBSearchView");
+    self.navigationItem.titleView = AppFoundationXIBView(@"GBSearchView");
     self.navigationItem.hidesBackButton = YES;
     
     UIBarButtonItem *cancle = [[UIBarButtonItem alloc]initWithTitle:@"取消" style:nil target:nil action:nil];

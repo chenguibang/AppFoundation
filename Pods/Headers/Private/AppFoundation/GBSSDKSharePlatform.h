@@ -1,1 +1,0 @@
-../../../../AppFoundation/Utils/ShareUtil/GBSSDKSharePlatform.h

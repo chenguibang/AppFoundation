@@ -11,6 +11,7 @@
 #import <ScottAlertController/ScottAlertViewController.h>
 #import "ScottAlertViewController+BlurEffects.h"
 #import <AppFoundation/AppFoundation.h>
+#import <ScottAlertController/UIView+ScottAlertView.h>
 @implementation GBSexPickView
 
 

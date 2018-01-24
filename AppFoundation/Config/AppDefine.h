@@ -41,11 +41,24 @@
 #define StrongSelf(type)  __strong typeof(type) type = weak##type;
 
 #pragma mark - XIB
-#define XIB(name) [[NSBundle mainBundle] loadNibNamed:name owner:nil options:nil][0]
-#define XIBController(name) [[UIViewController alloc] initWithNibName:name bundle:nil]
+//#define XIB(name) [[NSBundle mainBundle] loadNibNamed:name owner:nil options:nil][0]
+//#define XIBController(name) [[UIViewController alloc] initWithNibName:name bundle:nil]
 
 
 #pragma mark - 图片
 #define UIImageWithNamed(_pointer) [UIImage imageNamed:_pointer]
+
+#define AppFoundationBundleName @"AppFoundationBundle"
+
+#define AppFoundationBundle [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"AppFoundationBundle" ofType:@"bundle"]]
+
+#define AppFoundationImage(a) [UIImage imageNamed:a inBundle:[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"AppFoundationBundle" ofType:@"bundle"]] compatibleWithTraitCollection:nil]
+#define AppFoundationXIBView(name) [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"AppFoundationBundle" ofType:@"bundle"]] loadNibNamed:name owner:nil options:nil][0]
+#define AppFoundationXIBController(name) [[NSClassFromString(name) alloc] initWithNibName:name bundle:AppFoundationBundle]
+
+
+
+
+
 
 #endif /* AppDefine_h */

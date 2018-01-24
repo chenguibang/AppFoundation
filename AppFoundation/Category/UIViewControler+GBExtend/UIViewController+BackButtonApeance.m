@@ -9,7 +9,8 @@
 #import "UIViewController+BackButtonApeance.h"
 #import "UIImage+GBExpand.h"
 #import "APPManager.h"
-#import <UIViewController+JKBackButtonItemTitle.h>
+#import <JKCategories/UIViewController+JKBackButtonItemTitle.h>
+
 @implementation UIViewController(BackButtonApeance)
 
 + (void)load

@@ -1,1 +1,0 @@
-../../../ScottAlertController/ScottAlertViewDemo/ScottAlertViewDemo/ScottAlertController/ScottAlertAnimations/ScottScaleFadeAnimation.h

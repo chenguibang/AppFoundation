@@ -7,7 +7,7 @@
 //
 
 #import "GBShareCell.h"
-#import <UIButton-SSEdgeInsets/UIButton+SSEdgeInsets.h>
+#import <UIButton_SSEdgeInsets/UIButton+SSEdgeInsets.h>
 //#import <UIButton+HHAddLayout/UIButton+HHAddLayout.h>
 @implementation GBShareCell
 

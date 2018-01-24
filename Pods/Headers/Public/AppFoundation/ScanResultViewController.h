@@ -1,1 +1,0 @@
-../../../../AppFoundation/GBFoundation/GBQRScan/ScanResultViewController.h

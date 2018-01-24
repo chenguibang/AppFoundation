@@ -141,46 +141,105 @@ AppFoundation. for quik development AppFoundation. for quik development
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+        
+        s.dependency 'FMDB'                     #sqlite
+        s.dependency 'SVProgressHUD'           #菊花
+        s.dependency 'YBPopupMenu'            #弹出菜单
+        s.dependency 'IQKeyboardManager'        #键盘
+        s.dependency 'MJExtension'             #模型转换
+        s.dependency 'pop'                                   #动画库
+        s.dependency 'Masonry'
+        s.dependency 'TZImagePickerController'  #照片选择器
+        s.dependency 'ScottAlertController'     #弹窗控制器
+        s.dependency 'MJRefresh'               #上拉下拉刷新
+        s.dependency 'RefreshControl'          #上拉下拉刷新
+        s.dependency 'CYLTableViewPlaceHolder'   #占位视图
+        s.dependency 'WebViewJavascriptBridge'   #JS库
+        s.dependency 'UIButton-SSEdgeInsets'     #按钮上下左右
+        #pod 'UIButton+HHAddLayout', '~> 0.0.1'      #按钮上下左右
+        s.dependency 'LBXScan'                   #二维码扫描
+        
+        #时间管理
+        #pod 'NSDate+Calendar', '~> 0.0.9'
+        s.dependency 'NSDate-Escort'
+        #pod 'NSDate_Utils', '~> 1.0.6'
+        
+        
+        
+        #    s.dependency 'VOVCManager'                           #页面路由
+        s.dependency 'RKNotificationHub'                     #红点提示1
+        #pod 'WZLBadge'                             #红点提示2
+        s.dependency 'KVOController'
+        s.dependency 'VIPhotoView'                           #图片浏览View
+        s.dependency 'SDCycleScrollView'                     #图片轮播
+        
+        s.dependency 'MBProgressHUD'
+        s.dependency 'JKCategories'
+        s.dependency 'ReactiveObjC'
+        s.dependency 'DBCorner'
+        s.dependency 'ZYCornerRadius'
+        s.dependency 'UIImage+Additions'
+        s.dependency 'UITextField+Max'      #UITextField 长度限制
+        s.dependency 'AFNetworking'
+        s.dependency 'RestKit'
+        s.dependency 'AliyunOSSiOS'             #阿里云OOS
+        s.dependency 'BlocksKit'
+        s.dependency 'UITableView+FDTemplateLayoutCell'
+        s.dependency 'YYKit'
+        #    s.dependency 'ZJScrollPageView', '~> 0.4.0' #标签
+        s.dependency 'QrcodeBuilder'
+        
+        s.dependency 'GPUImage'
+        s.dependency 'KYGooeyMenu'
+        s.dependency 'XMLDictionary'
+        s.dependency 'FCFileManager'
 
-  s.dependency "LBXScan", "~> 2.2" 
-s.dependency 'FMDB', '~> 2.6.2'
-s.dependency 'SVProgressHUD', '~> 2.1.2'
-s.dependency 'YBPopupMenu', '~> 0.1.2' 
-s.dependency 'IQKeyboardManager', '~> 4.0.9'
-s.dependency 'MJExtension', '~> 3.0.13'
-s.dependency 'pop' 
-s.dependency 'Masonry', '~> 1.0.2'
-s.dependency 'TZImagePickerController', '~> 1.8.1'
-s.dependency 'ScottAlertController', '~> 0.1.0'
-s.dependency 'MJRefresh', '~> 3.1.12'
-s.dependency 'RefreshControl', '~> 2.0.5'
-s.dependency 'CYLTableViewPlaceHolder', '~> 1.0.8'
-s.dependency 'WebViewJavascriptBridge', '~> 6.0.2'
-s.dependency 'UIButton-SSEdgeInsets', '~> 0.1.7'
-#s.dependency 'UIButton+HHAddLayout', '~> 0.0.1'
-s.dependency 'NSDate-Escort', '~> 1.8.2'
-s.dependency 'RongCloudIM/IMLib', '~> 2.8.3'
-s.dependency 'RongCloudIM/IMKit', '~> 2.8.3'
-s.dependency 'RKNotificationHub'
-s.dependency 'KVOController'
-s.dependency 'VIPhotoView'
-s.dependency 'SDCycleScrollView'
-s.dependency 'Bugly'
-s.dependency 'JSONKit', '~> 1.5pre'
-s.dependency 'MBProgressHUD', '~> 1.0.0'
-s.dependency 'JKCategories', '~> 1.5'
-s.dependency 'ReactiveObjC', '~> 3.0.0'
-s.dependency 'DBCorner', '~> 0.1.1'
-s.dependency 'ZYCornerRadius', '~> 1.0.2'
-s.dependency 'UIImage+Additions', '~> 2.1.1'
-s.dependency 'UITextField+Max', '~> 1.0.2'
-s.dependency 'AFNetworking', '~> 3.1.0'
-s.dependency 'AliyunOSSiOS', '~> 2.6.0'
-s.dependency 'BlocksKit', '~> 2.2.5'
-s.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.6'
-s.dependency 'YYKit', '~> 1.0.9'
-#s.dependency 'ZJScrollPageView', '~> 0.4.0'
-s.dependency 'QrcodeBuilder', '~> 1.0.1'
+
+        s.dependency 'Bugly'                                 #日志记录
+        #IM
+        s.dependency 'RongCloudIM/IMLib'
+        s.dependency 'RongCloudIM/IMKit'
+        
+        
+        # 主模块(必须)
+        s.dependency 'mob_sharesdk'
+        
+        # UI模块(非必须，需要用到ShareSDK提供的分享菜单栏和分享编辑页面需要以下1行)
+        s.dependency 'mob_sharesdk/ShareSDKUI'
+        
+        # 平台SDK模块(对照一下平台，需要的加上。如果只需要QQ、微信、新浪微博，只需要以下3行)
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/QQ'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChat'   #（微信sdk不带支付的命令）
+        # s.dependency 'mob_sharesdk/ShareSDKPlatforms/WeChatFull' #（微信sdk带支付的命令，和上面不带支付的不能共存，只能选择一个）
+        
+        # ShareSDKPlatforms模块其他平台，按需添加
+        # 如果需要的平台没有对应的平台语句，有2种情况——1、不需要添加这个平台的语句，如Twitter就是这个情况。2、ShareSDK暂时不支持此平台。
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/RenRen'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/AliPaySocial'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/Kakao'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/Yixin'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/Facebook'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/Copy'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/Evernote'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/GooglePlus'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/Instagram'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/Instapaper'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/Line'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/Mail'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/SMS'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/WhatsApp'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/MeiPai'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/DingTalk'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/YouTube'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/Twitter'
+        s.dependency 'mob_sharesdk/ShareSDKPlatforms/Dropbox'
+        
+        # 使用配置文件分享模块（非必需）
+        #pod 'mob_sharesdk/ShareSDKConfigurationFile'
+        
+        # 扩展模块（在调用可以弹出我们UI分享方法的时候是必需的）
+        s.dependency 'mob_sharesdk/ShareSDKExtension'
 s.prefix_header_contents = <<-EOS
 #ifdef __OBJC__
 

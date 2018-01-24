@@ -27,7 +27,7 @@
     [super setupView];
     self.automaticallyAdjustsScrollViewInsets=NO;
     self.navigationController.automaticallyAdjustsScrollViewInsets = NO;
-    seachBar =  XIB(@"GBSearchView");
+    seachBar =  AppFoundationXIBView(@"GBSearchView");
 
     seachBar.searchTextFiled.delegate = self;
     self.navigationItem.titleView = seachBar;

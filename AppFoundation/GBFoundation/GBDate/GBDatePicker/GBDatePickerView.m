@@ -9,7 +9,8 @@
 #import "GBDatePickerView.h"
 #import "APPManager.h"
 #import <ScottAlertController/ScottAlertViewController.h>
-#import "ScottAlertViewController+BlurEffects.h"
+#import <ScottAlertController/ScottAlertViewController+BlurEffects.h>
+#import <ScottAlertController/UIView+ScottAlertView.h>
 #import <NSDate+GBExt.h>
 @implementation GBDatePickerView
 

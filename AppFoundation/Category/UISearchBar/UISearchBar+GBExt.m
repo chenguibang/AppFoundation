@@ -7,11 +7,12 @@
 //
 
 #import "UISearchBar+GBExt.h"
+#import <BlocksKit/BlocksKit+UIKit.h>
 
 @implementation UISearchBar(GBExt)
 
 - (void)gb_addToolBar{
-    UISearchBarToolBar *tool = XIB(@"UISearchBarToolBar");
+    UISearchBarToolBar *tool = AppFoundationXIBView(@"UISearchBarToolBar");
     tool.frame = CGRectMake(0, 0, SCREEN_WIDTH, 40);
     self.inputAccessoryView = tool;
     [tool.doneBtn bk_whenTapped:^{

@@ -1,1 +1,0 @@
-../../../../AppFoundation/GBFoundation/GBQRScan/LBXAlertAction/Class/UIWindow+LBXHierarchy.h

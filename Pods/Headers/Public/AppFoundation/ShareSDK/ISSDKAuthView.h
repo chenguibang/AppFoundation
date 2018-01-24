@@ -1,1 +1,0 @@
-../../../../../AppFoundation/ThirdPart/ShareSDK/ShareSDK/ShareSDK.framework/Headers/ISSDKAuthView.h

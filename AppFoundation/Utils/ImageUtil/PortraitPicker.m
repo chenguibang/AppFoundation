@@ -11,14 +11,15 @@
 #import "UIView+Layout.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <Photos/Photos.h>
-
 #import "TZImageManager.h"
 #import "TZVideoPlayerController.h"
 #import "TZPhotoPreviewController.h"
 #import "TZGifPhotoPreviewController.h"
 #import "TZLocationManager.h"
 #import "PortraPickerMenu.h"
-
+#import <ScottAlertController/ScottAlertViewController.h>
+#import <ScottAlertController/ScottAlertViewController+BlurEffects.h>
+#import <ScottAlertController/UIView+ScottAlertView.h>
 @interface PortraitPicker()<TZImagePickerControllerDelegate,UIActionSheetDelegate,UIImagePickerControllerDelegate,UIAlertViewDelegate,UINavigationControllerDelegate>{
     ImagePickBlock imagePickBlock;
     NSMutableArray *_selectedPhotos;
@@ -42,7 +43,7 @@
     
 
     
-    PortraPickerMenu *menu = [PortraPickerMenu createViewFromNib];
+    PortraPickerMenu *menu = AppFoundationXIBView(@"PortraPickerMenu");
     menu.portraPickerMenuBlock = ^(NSInteger index) {
         if (index == 1) {
             [self takePhoto];

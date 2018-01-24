@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface NSString(GBSize)
 
 + (CGSize)gb_sizeWithString:(NSString*)str andFont:(UIFont*)font  andMaxSize:(CGSize)size;
 
-+ (NSString*)gb_nullCheck:(NSString *)string;
++ (NSString *)gb_nullCheck:(NSString *)string;
 @end

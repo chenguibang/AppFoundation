@@ -8,15 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "APPTheme.h"
-
-
-
-
-
-
-
-
-
 @interface APPManager : NSObject
 @property (nonatomic, strong) APPTheme *theme;
 

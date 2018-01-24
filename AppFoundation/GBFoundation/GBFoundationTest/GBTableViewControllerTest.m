@@ -64,6 +64,8 @@
 
 
 
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -71,7 +73,7 @@
 
 
 - (UIView *)makePlaceHolderView{
-    GBTableViewPlaceHolder *emptyView = XIB(@"GBTableViewPlaceHolder");
+    GBTableViewPlaceHolder *emptyView = AppFoundationXIBView(@"GBTableViewPlaceHolder");
     emptyView.frame = self.tableView.bounds;
     return emptyView;
 }

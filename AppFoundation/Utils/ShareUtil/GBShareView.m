@@ -11,6 +11,9 @@
 #import "APPManager.h"
 #import <ShareSDK/ShareSDK.h>
 #import <ShareSDK/ShareSDK+Base.h>
+#import <ScottAlertController/ScottAlertViewController.h>
+#import <ScottAlertController/ScottAlertViewController+BlurEffects.h>
+#import <ScottAlertController/UIView+ScottAlertView.h>
 @implementation GBShareView
 
 

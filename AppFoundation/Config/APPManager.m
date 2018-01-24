@@ -8,9 +8,15 @@
 
 #import "APPManager.h"
 #import <Bugly/Bugly.h>
-
-
-
+#import <RongIMKit/RongIMKit.h>
+#import <RongIMLib/RongIMLib.h>
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+#import <WXApi.h>
+#import <WeiboSDK.h>
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+#import "GBSSDKSharePlatform.h"
 //新浪微博SDK需要在项目Build Settings中的Other Linker Flags添加”-ObjC”
 
 
@@ -45,7 +51,7 @@
 + (void)setupRCIM{
     
     
-
+    
     
     
     [[RCIM sharedRCIM] initWithAppKey:@"kj7swf8okhqd2"];

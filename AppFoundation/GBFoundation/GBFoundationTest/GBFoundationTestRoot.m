@@ -86,7 +86,7 @@
     
     Class vc = NSClassFromString(datas[indexPath.row][@"controller"]);
     if ([NSStringFromClass(vc) isEqualToString:@"ShareUtil"]) {
-        GBShareView *view = XIB(@"GBShareView");
+        GBShareView *view = AppFoundationXIBView(@"GBShareView");
         [view showAt:self];
         return;
     }

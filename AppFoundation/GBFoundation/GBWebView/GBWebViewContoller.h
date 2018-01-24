@@ -8,7 +8,8 @@
 
 #import "GBBaseViewController.h"
 #import <WebKit/WKWebView.h>
-#import <WKWebViewJavascriptBridge.h>
+#import <WebViewJavascriptBridge/WKWebViewJavascriptBridge.h>
+
 @interface GBWebViewContoller : GBBaseViewController<WKNavigationDelegate>
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, strong) WKWebView *webView;

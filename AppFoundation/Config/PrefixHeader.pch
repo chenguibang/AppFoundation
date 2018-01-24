@@ -14,6 +14,13 @@
 
 
 #pragma mark - 头文件导入
-#import "Header.h"
+
+
+
+#ifdef __OBJC__
+
+#import "AppDefine.h"
+
+#endif
 
 #endif /* PrefixHeader_pch */
