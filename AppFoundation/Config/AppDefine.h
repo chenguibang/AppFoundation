@@ -50,10 +50,16 @@
 
 #define AppFoundationBundleName @"AppFoundationBundle"
 
-#define AppFoundationBundle [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"AppFoundationBundle" ofType:@"bundle"]]
+//#define AppFoundationBundle [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"AppFoundationBundle" ofType:@"bundle"]]
 
-#define AppFoundationImage(a) [UIImage imageNamed:a inBundle:[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"AppFoundationBundle" ofType:@"bundle"]] compatibleWithTraitCollection:nil]
-#define AppFoundationXIBView(name) [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"AppFoundationBundle" ofType:@"bundle"]] loadNibNamed:name owner:nil options:nil][0]
+
+#define AppFoundationBundle [NSBundle mainBundle]
+
+//#define AppFoundationImage(a) [UIImage imageNamed:a inBundle:AppFoundationBundle compatibleWithTraitCollection:nil]
+
+#define AppFoundationImage(a) [UIImage imageNamed:a]
+
+#define AppFoundationXIBView(name) [AppFoundationBundle loadNibNamed:name owner:nil options:nil][0]
 #define AppFoundationXIBController(name) [[NSClassFromString(name) alloc] initWithNibName:name bundle:AppFoundationBundle]
 
 
